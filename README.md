@@ -6,7 +6,7 @@ RxJava2를 공부한 흔적을 보여주는 Repository 입니다.
 
 
 
-<img src="https://lh3.googleusercontent.com/proxy/mm-hAjoDFH2KozPg0eoqUpi5cgVpKtkuaYnayKfiMv3eNgRd8fVqHFgRHU4TtYOXL94kUXZZBCHe0ensy4RICHsaje9t3AdMTGLVmHfq40KgLzN0i4yvQUpDzw" width = "300" height = "450"  />
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/rxjavaProgrammingBookImage.jpg?raw=true" width = "300" height = "450"  />
 
 한빛 미디어의 RxJava 프로그래밍 책을 보면서 안에 코드를 코틀린으로 바꿔가며 공부하고 있습니다.</br>
 
@@ -24,7 +24,7 @@ RxJava2를 공부한 흔적을 보여주는 Repository 입니다.
 
 
 
-<img src="" width = "300" height = "450"  /></br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/flipMarbleDiagram.png?raw=true" width = "500" height = "250"  /></br>
 
 
 
@@ -48,7 +48,7 @@ flip 마블 다이어그램보다 좀 더 복잡한 마블 다이어그램인 co
 
 
 
-<img src="" width = "300" height = "450"  /></br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/combineLatestMarbleDiagram.PNG?raw=true" width = "500" height = "250"  /></br>
 
 
 
@@ -61,3 +61,4 @@ flip 마블 다이어그램보다 좀 더 복잡한 마블 다이어그램인 co
 4. 아래 시간 표시줄을 보면 두 Observable을 조합한 결과라는 것을 알 수 있다. 
 
    (첫번째는 Observable은 색상, 두번째 Observable은 모양)
+
