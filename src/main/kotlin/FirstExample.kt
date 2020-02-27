@@ -1,5 +1,4 @@
 import io.reactivex.Observable
-import java.util.*
 
 class FirstExample {
     fun emit() {
