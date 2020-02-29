@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/FirstExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/FirstExample.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/Observable/Observable.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/Observable/Observable.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/FirstExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter01/FirstExample.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,20 +39,54 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/chapter02" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
-    <configuration name="FirstExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter02" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter01" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Kotlin.chapter02.ObservableNotificationsKt">
+    <configuration name="chapter01.FirstExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="FirstExampleKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter01.FirstExampleKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="chapter02.FirstExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="RxJavaStudy.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="chapter02.FirstExampleKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="chapter02.ObservableNotificationsKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="RxJavaStudy.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="chapter02.ObservableNotificationsKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,7 +94,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.FirstExampleKt" />
+        <item itemvalue="Kotlin.chapter02.ObservableNotificationsKt" />
+        <item itemvalue="Kotlin.chapter02.FirstExampleKt" />
+        <item itemvalue="Kotlin.chapter01.FirstExampleKt" />
       </list>
     </recent_temporary>
   </component>
@@ -79,6 +114,9 @@
       <workItem from="1582810561086" duration="38000" />
       <workItem from="1582810616057" duration="706000" />
       <workItem from="1582824247640" duration="1209000" />
+      <workItem from="1582914213815" duration="1938000" />
+      <workItem from="1582934408458" duration="2075000" />
+      <workItem from="1582982638411" duration="2114000" />
     </task>
     <servers />
   </component>
@@ -86,29 +124,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1869" height="273" key="GridCell.Tab.0.bottom" timestamp="1582810111663">
+    <state width="1869" height="273" key="GridCell.Tab.0.bottom" timestamp="1582984687873">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810111663" />
-    <state width="1869" height="273" key="GridCell.Tab.0.center" timestamp="1582810111662">
+    <state width="1869" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582984687873" />
+    <state width="1869" height="273" key="GridCell.Tab.0.center" timestamp="1582984687873">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810111662" />
-    <state width="1869" height="273" key="GridCell.Tab.0.left" timestamp="1582810111662">
+    <state width="1869" height="273" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582984687873" />
+    <state width="1869" height="273" key="GridCell.Tab.0.left" timestamp="1582984687873">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810111662" />
-    <state width="1869" height="273" key="GridCell.Tab.0.right" timestamp="1582810111662">
+    <state width="1869" height="273" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582984687873" />
+    <state width="1869" height="273" key="GridCell.Tab.0.right" timestamp="1582984687873">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810111662" />
+    <state width="1869" height="273" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582984687873" />
     <state x="389" y="83" key="SettingsEditor" timestamp="1582810709404">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="389" y="83" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810709404" />
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1582914215347">
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1582982637410">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582914215347" />
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582982637410" />
   </component>
 </project>
