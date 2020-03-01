@@ -42,9 +42,11 @@ just 함수는 데이터를 차례로 발행하려고 Observable을 생성한다
 
 </br>
 
-<img src="" width = "500" height = "250"  /> </br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/justMarbleDiagram.png?raw=true" width = "500" height = "250"  /> </br>
 
 중앙의 원은 Observable에서 발행하는 데이터로 just 함수를 거치면 입력한 원을 그대로 발행한다. </br>
+
+
 
 **입력**
 
