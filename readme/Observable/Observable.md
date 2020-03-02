@@ -143,3 +143,168 @@ isDisposed() : true
 
 #### create 함수
 
+create 함수는 onNext,  onComplete, onError 같은 알림을 개발자가 호출해야 한다.
+
+구독자에게 데이터를 발행하려면 onNext 함수를 호출해야 하고, 모든 데이터를 발행한 후에는 반드시 onComplete 함수를 호출해야한다. </br>
+
+
+
+***입력***
+
+```kotlin
+import io.reactivex.Observable
+import io.reactivex.ObservableEmitter
+
+class ObservableCreateExample {
+    fun emit() {
+        val source = Observable.create {emitter: ObservableEmitter<Int> ->
+            emitter.onNext(100)
+            emitter.onNext(200)
+            emitter.onNext(300)
+            emitter.onComplete()
+        }
+        source.subscribe(System.out::println)
+    }
+}
+
+fun main() {
+    val demo = ObservableCreateExample()
+    demo.emit()
+}
+```
+
+**출력**
+
+```
+100
+200
+300
+```
+
+[FirstExample 예제](https://github.com/Im-Tae/RxJava2_Study/blob/master/src/main/kotlin/chapter01/FirstExample.kt)와 다르게 Observable 타입의 source 변수를 분리하였는데, 여기서 source 변수는 차가운 Observable 이다. 즉, subscribe 함수를 호출했을때 값을 발행한다. 
+
+</br>
+
+
+
+***입력***
+
+```kotlin
+import io.reactivex.Observable
+import io.reactivex.ObservableEmitter
+
+class ObservableCreateExample {
+    fun noSubscribed() {
+        val source = Observable.create { emitter: ObservableEmitter<Int> ->
+            emitter.onNext(100)
+            emitter.onNext(200)
+            emitter.onNext(300)
+            emitter.onComplete()
+        }
+    }
+}
+
+fun main() {
+    val demo = ObservableCreateExample()
+    demo.noSubscribed()
+}
+```
+
+**출력**
+
+```
+
+```
+
+
+
+위에 예제를 보면 subscribe 함수를 호출하지 않아서 아무것도 출력되지 않는다.
+
+</br>
+
+
+
+subscribe 함수의 인자를 **람다 표현식**으로 변경하면 아래와 같이 변경할 수 있다.
+
+***입력***
+
+```kotlin
+import io.reactivex.Observable
+import io.reactivex.ObservableEmitter
+
+class ObservableCreateExample {
+    fun subscribeLamda() {
+        val source = Observable.create { emitter: ObservableEmitter<Int> ->
+            emitter.onNext(100)
+            emitter.onNext(200)
+            emitter.onNext(300)
+            emitter.onComplete()
+        }
+        source.subscribe { data -> println("Result : $data") }
+    }
+}
+
+fun main() {
+    val demo = ObservableCreateExample()
+    demo.subscribeLamda()
+}
+```
+
+**출력**
+
+```
+Result : 100
+Result : 200
+Result : 300
+```
+
+리액티브 프로그래밍에서 람다 표현식과 메서드 레퍼런스를 적극적으로 사용하는 것이 좋습니다. 
+
+왜 좋은지 익명 함수를 사용한 예시로 보면, </br>
+
+
+
+***입력***
+
+```kotlin
+package chapter02
+
+import io.reactivex.Observable
+import io.reactivex.ObservableEmitter
+import io.reactivex.functions.Consumer
+
+class ObservableCreateExample {
+    fun subscribeAnonymously() {
+        val source = Observable.create { emitter: ObservableEmitter<Int> ->
+            emitter.onNext(100)
+            emitter.onNext(200)
+            emitter.onNext(300)
+            emitter.onComplete()
+        }
+
+        source.subscribe(Consumer<Int> { data -> println("Result : $data") })
+    }
+}
+
+fun main() {
+    val demo = ObservableCreateExample()
+    demo.subscribeAnonymously()
+}
+```
+
+**출력**
+
+```
+Result : 100
+Result : 200
+Result : 300
+```
+
+위의 방법으로 할 경우에는 subscribe 함수의 원형을 알아야하고, Consumer 클래스의 메서드도 매번 입력을 해주어야 하므로 번거롭다. 따라서 람다 표현식을 사용하는 것이다.
+
+</br></br>
+
+
+
+#### fromArray
+
