@@ -258,17 +258,15 @@ Result : 200
 Result : 300
 ```
 
-리액티브 프로그래밍에서 람다 표현식과 메서드 레퍼런스를 적극적으로 사용하는 것이 좋습니다. 
+리액티브 프로그래밍에서 람다 표현식과 메서드 레퍼런스를 적극적으로 사용하는 것이 좋다.
 
-왜 좋은지 익명 함수를 사용한 예시로 보면, </br>
+이유로 익명 함수를 사용한 예시로 보면, </br>
 
 
 
 ***입력***
 
 ```kotlin
-package chapter02
-
 import io.reactivex.Observable
 import io.reactivex.ObservableEmitter
 import io.reactivex.functions.Consumer
@@ -308,3 +306,165 @@ Result : 300
 
 #### fromArray
 
+배열에 들어 있는 데이터를 처리할 때는 fromArray 함수를 활용한다.</br>
+
+
+
+***입력***
+
+```kotlin
+import io.reactivex.Observable
+
+class ObservableFromArray {
+    fun integerArray() {
+        val arr = arrayOf(100, 200, 300)
+        
+        val source = Observable.fromArray(*arr)
+        source.subscribe(System.out::println)
+    }
+}
+
+fun main() {
+    val demo = ObservableFromArray()
+    demo.integerArray()
+}
+```
+
+**출력**
+
+```
+100
+200
+300
+```
+
+위와 같이 배열에 원하는 값을 넣고 Observable.fromArray를 호출한뒤, subscribe 함수를 호출하여 데이터가 차례로 발행된 것을 볼 수 있다.
+
+</br></br>
+
+
+
+#### fromIterable
+
+Iterator 인터페이스는 이터레이터 패턴을 구현한 것으로 다음에 어떤 데이터가 있는지와 그 값을 얻어오는 것만 관여할 뿐 특정 데이터 타입에 의존하지 않는 장점이 있다.
+
+Iterable 인터페이스를 구현하는 대표적인 클래스는 ArrayList, ArrayBlockingQueue, HashSet, LinkedList, Stack 등이 있다.
+
+아래 코드는 List 객체에서 Observable을 만드는 방법이다.</br>
+
+
+
+***입력***
+
+```kotlin
+import io.reactivex.Observable
+
+class ObservableFromIterable {
+    fun listExample() {
+        val names: MutableList<String> = ArrayList()
+        names.add("Jerry")
+        names.add("William")
+        names.add("Bob")
+
+        val source = Observable.fromIterable(names)
+        source.subscribe(System.out::println)
+    }
+}
+
+fun main() {
+    val demo = ObservableFromIterable()
+    demo.listExample()
+}
+```
+
+**출력**
+
+```
+Jerry
+William
+Bob
+```
+
+</br></br>
+
+
+
+이어서 아래 코드는 Set 인터페이스 객체로 Observable을 만드는 방법이다. </br>
+
+
+
+***입력***
+
+```kotlin
+import io.reactivex.Observable
+
+class ObservableFromIterable {
+    fun setExample() {
+        val cities : MutableSet<String> = HashSet()
+        cities.add("Seoul")
+        cities.add("London")
+        cities.add("Paris")
+
+        val source = Observable.fromIterable(cities)
+        source.subscribe(System.out::println)
+    }
+}
+
+fun main() {
+    val demo = ObservableFromIterable()
+    demo.setExample()
+}
+```
+
+**출력**
+
+```
+Seoul
+London
+Paris
+```
+
+</br></br>
+
+
+
+마지막으로 BlockingQueue 인터페이스의 객체로 Observable을 만드는 방법이다.</br>
+
+
+
+***입력***
+
+```kotlin
+import io.reactivex.Observable
+
+class ObservableFromIterable {
+    fun blockingQueueExample() {
+        val orderQueue : BlockingQueue<Order> = ArrayBlockingQueue(100)
+        orderQueue.add(Order("ORD-1"))
+        orderQueue.add(Order("ORD-2"))
+        orderQueue.add(Order("ORD-3"))
+
+        val source = Observable.fromIterable(orderQueue)
+        source.subscribe { order -> println(order.getId())}
+    }
+}
+
+fun main() {
+    val demo = ObservableFromIterable()
+    demo.blockingQueueExample()
+}
+```
+
+**출력**
+
+```
+ORD-1
+ORD-2
+ORD-3
+```
+
+BlockingQueue 객체는 구현 클래스로 ArrayBlockingQueue를 사용했고, 최대 대기 행렬 수는 100개로 지정했다.
+
+객체를 입력했지만 출력은 getId()를 사용하여 Order 객체의 ID를 출력한다.
+
+</br></br>
