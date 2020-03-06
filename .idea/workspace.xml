@@ -4,15 +4,6 @@
     <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/a$Companion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/a$basic$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/a$basic$source$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/a$notSubscribed$source$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/a$subscribeAnonymously$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/a$subscribeAnonymously$source$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/a$subscribeLambda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/a$subscribeLambda$source$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/a.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/readme/Observable/Observable.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/Observable/Observable.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,20 +52,7 @@
       <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter01" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ObservableFromIterableKt">
-    <configuration name="a" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chapter02.a" />
-      <module name="RxJavaStudy.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chapter02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.ObservableFromPublisherKt">
     <configuration name="ObservableFromArrayKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
@@ -83,6 +61,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="chapter02.ObservableFromArrayKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObservableFromCallableKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="RxJavaStudy.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="chapter02.ObservableFromCallableKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ObservableFromFutureKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="RxJavaStudy.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="chapter02.ObservableFromFutureKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -101,27 +105,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="chapter02.ObservableCreateExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="ObservableFromPublisherKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter02.ObservableCreateExampleKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="chapter02.a" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="RxJavaStudy.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter02.a" />
+      <option name="MAIN_CLASS_NAME" value="chapter02.ObservableFromPublisherKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ObservableFromPublisherKt" />
+        <item itemvalue="Kotlin.ObservableFromFutureKt" />
+        <item itemvalue="Kotlin.ObservableFromCallableKt" />
         <item itemvalue="Kotlin.ObservableFromIterableKt" />
         <item itemvalue="Kotlin.ObservableFromArrayKt" />
-        <item itemvalue="Kotlin.chapter02.ObservableCreateExampleKt" />
-        <item itemvalue="Kotlin.chapter02.a" />
-        <item itemvalue="Application.a" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +147,8 @@
       <workItem from="1582982638411" duration="3417000" />
       <workItem from="1583144333040" duration="4185000" />
       <workItem from="1583341393518" duration="1507000" />
-      <workItem from="1583344229003" duration="3502000" />
+      <workItem from="1583344229003" duration="3606000" />
+      <workItem from="1583491444811" duration="2118000" />
     </task>
     <servers />
   </component>
@@ -168,30 +160,30 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583341476506" />
-    <state width="1869" height="273" key="GridCell.Tab.0.bottom" timestamp="1583398669287">
+    <state width="1869" height="275" key="GridCell.Tab.0.bottom" timestamp="1583494947234">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583398669287" />
-    <state width="1869" height="273" key="GridCell.Tab.0.center" timestamp="1583398669287">
+    <state width="1869" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583494947234" />
+    <state width="1869" height="275" key="GridCell.Tab.0.center" timestamp="1583494947233">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583398669287" />
-    <state width="1869" height="273" key="GridCell.Tab.0.left" timestamp="1583398669287">
+    <state width="1869" height="275" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583494947233" />
+    <state width="1869" height="275" key="GridCell.Tab.0.left" timestamp="1583494947233">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583398669287" />
-    <state width="1869" height="273" key="GridCell.Tab.0.right" timestamp="1583398669287">
+    <state width="1869" height="275" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583494947233" />
+    <state width="1869" height="275" key="GridCell.Tab.0.right" timestamp="1583494947233">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="273" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583398669287" />
+    <state width="1869" height="275" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583494947233" />
     <state x="389" y="83" key="SettingsEditor" timestamp="1582810709404">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="389" y="83" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810709404" />
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1583344228793">
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1583491444399">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583344228793" />
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583491444399" />
     <state x="532" y="0" width="838" height="1032" key="search.everywhere.popup" timestamp="1583148930016">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

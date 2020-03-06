@@ -468,3 +468,125 @@ BlockingQueue 객체는 구현 클래스로 ArrayBlockingQueue를 사용했고, 
 객체를 입력했지만 출력은 getId()를 사용하여 Order 객체의 ID를 출력한다.
 
 </br></br>
+
+
+
+#### fromCallable
+
+callable 객체와 fromCallable 함수를 이용해 Observable을 만드는 방법이다.</br>
+
+
+
+***입력***
+
+```kotlin
+import io.reactivex.Observable
+import java.util.concurrent.Callable
+
+class ObservableFromCallable {
+    fun emit() {
+        val callable = Callable {
+            Thread.sleep(1000)
+            "Hello Callable"
+        }
+
+        val source = Observable.fromCallable(callable)
+        source.subscribe(System.out::println)
+    }
+}
+
+fun main() {
+    val demo = ObservableFromCallable()
+    demo.emit()
+}
+```
+
+**출력**
+
+```
+Hello Callable
+```
+
+</br></br>
+
+
+
+#### fromFuture
+
+future 객체에서 fromFuture 함수를 사용해 Observable을 생성하는 방법이다.</br>
+
+
+
+***입력***
+
+```kotlin
+import io.reactivex.Observable
+import java.util.concurrent.Executors
+
+class ObservableFromFuture {
+    fun emit() {
+        val future = Executors.newSingleThreadExecutor().submit<String> {
+            Thread.sleep(1000)
+            "Hello Future"
+        }
+
+        val source = Observable.fromFuture(future)
+        source.subscribe(System.out::println)
+    }
+}
+
+fun main() {
+    val demo = ObservableFromFuture()
+    demo.emit()
+}
+```
+
+**출력**
+
+```
+Hello Future
+```
+
+</br></br>
+
+
+
+#### fromPublisher
+
+자바 9의 표준 API인 Publisher을 사용하여 fromPublisher  함수를 통해서 Observable을 만드는 방법이다.</br>
+
+
+
+***입력***
+
+```kotlin
+import io.reactivex.Observable
+import org.reactivestreams.Publisher
+import org.reactivestreams.Subscriber
+
+
+class ObservableFromPublisher {
+    fun emit() {
+        val publisher = Publisher { s: Subscriber<in String?> ->
+            s.onNext("Hello Observable.fromPublisher()")
+            s.onComplete()
+        }
+
+        val source = Observable.fromPublisher(publisher)
+        source.subscribe(System.out::println)
+    }
+}
+
+fun main() {
+    val demo = ObservableFromPublisher()
+    demo.emit()
+}
+```
+
+**출력**
+
+```
+Hello Observable.fromPublisher()
+```
+
+</br></br>
