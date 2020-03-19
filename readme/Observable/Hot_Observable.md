@@ -28,4 +28,4 @@ Observable을 선언하고 just, fromArray 함수를 호출해도 옵서버가 s
 
 **차가운 Observable**은 구독하면 준비된 데이터를 처음부터 발행하고, **뜨거운 Observable**은 구독한 시점부터 Observable에서 발핸한 값을 받는다.
 
-차가운 Observable을 뜨거운 Observable 객체로 변환하는 방법은 [Subject]() 객체를 만들거나 [ConnectableObservable]() 클래스를 활용한다.
+차가운 Observable을 뜨거운 Observable 객체로 변환하는 방법은 [Subject](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Observable/Subject.md) 객체를 만들거나 [ConnectableObservable](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Observable/ConnectableObservable.md) 클래스를 활용한다.
