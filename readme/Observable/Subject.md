@@ -20,7 +20,7 @@ Observable에서 발행한 마지막 데이터를 얻어올 수 있는 Subject �
 
 </br>
 
-<img src="" width = "500" height = "250"  /> </br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/AsyncSubject.png?raw=true" width = "500" height = "250"  /> </br>
 
 
 
@@ -119,8 +119,6 @@ Subscriber #1 => 125.0
 **입력**
 
 ```kotlin
-package chapter02
-
 import io.reactivex.subjects.AsyncSubject
 
 class AsyncSubjectExample {
@@ -157,3 +155,172 @@ Subscriber #3 => 12
 
 #### BehaviorSubject
 
+구독자가 구독을 하면 가장 최근 값 혹은 기본값을 넘겨주는 클래스이다.
+
+온도 센서에서 값을 받아온다면 가장 최근의 값을 받아오는 동작을 구현할 수 있고 값이 없을 경우 초깃값을 반환한다.
+
+</br>
+
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/BehaviorSubject.png?raw=true" width = "500" height = "250"  /> </br>
+
+
+
+보라색 원은 BehaviorSubject를 생성할 때 넘긴 초깃값이다.
+
+첫 번째 구독자는 초깃값을 받고 다음에 빨간색 원부터 수신한다.
+
+두 번째 구독자는 초록색 원이 발행된 이후에 구독했으므로 초록색 원을 전달한다.
+
+</br>
+
+
+
+**입력**
+
+```kotlin
+import io.reactivex.subjects.BehaviorSubject
+
+class BehaviorSubjectExample {
+    fun marbleDiagram() {
+        val subject = BehaviorSubject.createDefault("6")
+        subject.subscribe { data -> println("Subscriber #1 => $data") }
+        subject.onNext("1")
+        subject.onNext("3")
+        subject.subscribe { data -> println("Subscriber #2 => $data") }
+        subject.onNext("5")
+        subject.onComplete()
+    }
+}
+
+fun main() {
+    val demo = BehaviorSubjectExample()
+    demo.marbleDiagram()
+}
+```
+
+**출력**
+
+```
+Subscriber #1 => 6
+Subscriber #1 => 1
+Subscriber #1 => 3
+Subscriber #2 => 3
+Subscriber #1 => 5
+Subscriber #2 => 5
+```
+
+</br></br>
+
+
+
+#### PublishSubject
+
+AsyncSubject 클래스처럼 마지막 값만 발행하거나 BehaviorSubject 처럼 발행한 값이 없을 때 기본값을 발행하지도 않는다. 그저 해당 시간에 발생한 데이터를 그대로 구독자에게 전달받는다.
+
+</br>
+
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/PublishSubject.png?raw=true" width = "500" height = "250"  /> </br>
+
+
+
+첫 번째 구독자가 subscribe 함수를 호출하고 빨간색 원과 초록색 원을 발행한다.
+
+두 번째 구독자가 subscribe 함수를 호출하면 파란색 원을 발행한다.
+
+onComplete 함수를 호출해 데이터 발행을 완료한다.
+
+</br>
+
+
+
+**입력**
+
+```kotlin
+import io.reactivex.subjects.PublishSubject
+
+class PublishSubjectExample {
+    fun marbleDiagram() {
+        val subject = PublishSubject.create<String>()
+        subject.subscribe { data -> println("Subscriber #1 => $data") }
+        subject.onNext("1")
+        subject.onNext("3")
+        subject.subscribe { data -> println("Subscriber #2 => $data") }
+        subject.onNext("5")
+        subject.onComplete()
+    }
+}
+
+fun main() {
+    val demo = PublishSubjectExample()
+    demo.marbleDiagram()
+}
+```
+
+**출력**
+
+```
+Subscriber #1 => 1
+Subscriber #1 => 3
+Subscriber #1 => 5
+Subscriber #2 => 5
+```
+
+
+
+첫 번째 구독자는 Subject 클래스가 발행한 1, 3, 5 데이터를 모두 전달받으며, 두 번째 구독자는 구독한 이후에 발행된 데이터인 5만 전달받는다
+
+</br></br>
+
+
+
+#### ReplaySubject
+
+Subject 클래스의 목적은 뜨거운 Observable을 활용하는 것인데 ReplaySubject는 차가운 Observable처럼 동작한다. 구독자가 새로 생기면 항상 데이터의 처음부터 끝까지 발행하는 것을 보장한다.
+
+</br>
+
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/ReplaySubject.png?raw=true" width = "500" height = "250"  /> </br>
+
+
+
+**입력**
+
+```kotlin
+import io.reactivex.subjects.ReplaySubject
+
+class ReplaySubjectExample {
+    fun marbleDiagram() {
+        val subject = ReplaySubject.create<String>()
+        subject.subscribe { data -> println("Subscriber #1 => $data") }
+        subject.onNext("1")
+        subject.onNext("3")
+        subject.subscribe { data -> println("Subscriber #2 => $data") }
+        subject.onNext("5")
+        subject.onComplete()
+    }
+}
+
+fun main() {
+    val demo = ReplaySubjectExample()
+    demo.marbleDiagram()
+}
+```
+
+**출력**
+
+```
+Subscriber #1 => 1
+Subscriber #1 => 3
+Subscriber #2 => 1
+Subscriber #2 => 3
+Subscriber #1 => 5
+Subscriber #2 => 5
+```
+
+
+
+첫 번째 구독자는 Observable을 구독한 이후에 발행한 1, 3을 전달받는다.
+
+두 번째 구독자는 subscribe를 호출하여 지금까지 발행된 1, 3을 바로 전달받는다.
+
+마지막으로 Subject 클래스가 5를 발행하면 두 구독자 모두 해당 값을 전달받는다. 
