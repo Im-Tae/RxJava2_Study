@@ -10,7 +10,7 @@ ConnectableObservable 객체를 생성하려면 먼저 Observable에 publish를 
 
 </br>
 
-<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/ConnectableObservable.png?raw=true" width = "500" height = "250"  /> </br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/ConnectableObservable.png?raw=true" width = "550" height = "300"  /> </br>
 
 
 
