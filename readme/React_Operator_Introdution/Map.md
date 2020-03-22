@@ -6,7 +6,7 @@ map 함수는 입력값을 어떤 함수에 넣어서 원하는 값으로 변환
 
 
 
-<img src="" width = "550" height = "300"  /> </br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/map.png?raw=true" width = "550" height = "250"  /> </br>
 
 
 

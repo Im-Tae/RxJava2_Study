@@ -6,7 +6,7 @@ Map 함수가 일대일 함수라면 FlatMap 함수는 일대다 혹은 일대�
 
 
 
-<img src="" width = "550" height = "300"  /> </br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/flatMap.png?raw=true" width = "550" height = "300"  /> </br>
 
 
 
