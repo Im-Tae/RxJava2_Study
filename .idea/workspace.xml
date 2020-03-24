@@ -3,37 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/FlatMapExample$flatMapLamda$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/FlatMapExample$flatMapLamda$source$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/FlatMapExample$marbleDiagram$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/FlatMapExample$marbleDiagram$getDoubleDiamonds$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/FlatMapExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/FlatMapExampleKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/Gugudan$reactiveV1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/Gugudan$reactiveV2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/Gugudan$reactiveV2$gugudan$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/Gugudan$reactiveV2$gugudan$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/Gugudan$reactiveV3$source$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/Gugudan$reactiveV3$source$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/Gugudan$usingResultSelector$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/Gugudan$usingResultSelector$source$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/Gugudan$usingResultSelector$source$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/Gugudan.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/GugudanKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/MapExample$mapFunction$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/MapExample$mapFunction$getDiamond$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/MapExample$marbleDiagram$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/MapExample$marbleDiagram$source$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/MapExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter02/MapExampleKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/React_Operator_Introdution/Filter.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/React_Operator_Introdution/Filter.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/React_Operator_Introdution/FlatMap.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/React_Operator_Introdution/FlatMap.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/React_Operator_Introdution/Map.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/React_Operator_Introdution/Map.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/React_Operator_Introdution/Reduce.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/React_Operator_Introdution/Reduce.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter02/FlatMapExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter03/FlatMapExample.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter02/Gugudan.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter03/Gugudan.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter02/MapExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter03/MapExample.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSalesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSalesKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/React_Operator_Deepening/생성 연산자.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/React_Operator_Deepening/생성 연산자.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Class" />
+        <option value="Kotlin Class" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -68,81 +46,82 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebtoonDownloader" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter03" />
-      <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter01" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter02" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter04\create" />
+      <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter03" />
+      <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter01" />
+    </key>
   </component>
-  <component name="RunManager" selected="Kotlin.QueryTvSalesKt">
-    <configuration name="FilterExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.RepeatExampleKt">
+    <configuration name="DeferExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter03.FilterExampleKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter04.create.DeferExampleKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GugudanKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="IntervalExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter03.GugudanKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter04.create.IntervalExampleKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="IntervalRangeExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter03.MapExampleKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter04.create.IntervalRangeExampleKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QueryTvSalesKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="RangeExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter03.QueryTvSalesKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter04.create.RangeExampleKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReduceExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="RepeatExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter03.ReduceExampleKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter04.create.RepeatExampleKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.QueryTvSalesKt" />
-        <item itemvalue="Kotlin.ReduceExampleKt" />
-        <item itemvalue="Kotlin.FilterExampleKt" />
-        <item itemvalue="Kotlin.GugudanKt" />
-        <item itemvalue="Kotlin.MapExampleKt" />
+        <item itemvalue="Kotlin.RepeatExampleKt" />
+        <item itemvalue="Kotlin.DeferExampleKt" />
+        <item itemvalue="Kotlin.IntervalRangeExampleKt" />
+        <item itemvalue="Kotlin.IntervalExampleKt" />
+        <item itemvalue="Kotlin.RangeExampleKt" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +163,10 @@
       <workItem from="1584605868110" duration="2091000" />
       <workItem from="1584688018911" duration="5618000" />
       <workItem from="1584770399617" duration="8038000" />
-      <workItem from="1584814247680" duration="8487000" />
+      <workItem from="1584814247680" duration="8886000" />
+      <workItem from="1584942460934" duration="632000" />
+      <workItem from="1584970805809" duration="100000" />
+      <workItem from="1585033293110" duration="12421000" />
     </task>
     <servers />
   </component>
@@ -192,34 +174,50 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="224" key="FileChooserDialogImpl" timestamp="1583341476506">
+    <state x="690" y="224" key="FileChooserDialogImpl" timestamp="1584970903777">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1583341476506" />
-    <state width="934" height="277" key="GridCell.Tab.0.bottom" timestamp="1584874178146">
+    <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584970903777" />
+    <state width="934" height="277" key="GridCell.Tab.0.bottom" timestamp="1585053795804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584874178146" />
-    <state width="934" height="277" key="GridCell.Tab.0.center" timestamp="1584874178145">
+    <state width="934" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585053795804" />
+    <state width="934" height="277" key="GridCell.Tab.0.center" timestamp="1585053795804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584874178145" />
-    <state width="934" height="277" key="GridCell.Tab.0.left" timestamp="1584874178145">
+    <state width="934" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585053795804" />
+    <state width="934" height="277" key="GridCell.Tab.0.left" timestamp="1585053795804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584874178145" />
-    <state width="934" height="277" key="GridCell.Tab.0.right" timestamp="1584874178146">
+    <state width="934" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585053795804" />
+    <state width="934" height="277" key="GridCell.Tab.0.right" timestamp="1585053795804">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584874178146" />
+    <state width="934" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585053795804" />
+    <state width="934" height="339" key="GridCell.Tab.1.bottom" timestamp="1585041065126">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="934" height="339" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585041065126" />
+    <state width="934" height="339" key="GridCell.Tab.1.center" timestamp="1585041065126">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="934" height="339" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585041065126" />
+    <state width="934" height="339" key="GridCell.Tab.1.left" timestamp="1585041065126">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="934" height="339" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585041065126" />
+    <state width="934" height="339" key="GridCell.Tab.1.right" timestamp="1585041065126">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="934" height="339" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585041065126" />
     <state x="389" y="83" key="SettingsEditor" timestamp="1582810709404">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="389" y="83" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810709404" />
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1584814247026">
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1584970813621">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584814247026" />
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584970813621" />
     <state x="122" y="51" key="new project wizard" timestamp="1584814700100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

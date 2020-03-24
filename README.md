@@ -12,6 +12,18 @@ RxJava2를 공부한 흔적을 보여주는 Repository 입니다.
 
 
 
+## RxJava2 추가
+
+```kotlin
+dependencies {
+    implementation "io.reactivex.rxjava2:rxjava:2.2.7"
+}
+```
+
+</br>
+
+
+
 ## Ⅰ
 
 ### ⅰ. [리액티브 프로그래밍 이란?](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/ReactiveProgramming/ReactiveProgramming.md)
