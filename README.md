@@ -8,7 +8,11 @@ RxJava2를 공부한 흔적을 보여주는 Repository 입니다.
 
 <img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/rxjavaProgrammingBookImage.jpg?raw=true" width = "300" height = "450"  />
 
-한빛 미디어의 RxJava 프로그래밍 책을 보면서 안에 코드를 코틀린으로 바꿔가며 공부하고 있습니다.</br></br>
+한빛 미디어의 RxJava 프로그래밍 책을 보면서 안에 코드를 코틀린으로 바꿔가며 공부하고 있습니다.
+
+따라서 책에 있는 내용이 마크다운에 있을 수도 있고 없을 수도 있습니다.
+
+</br></br>
 
 
 

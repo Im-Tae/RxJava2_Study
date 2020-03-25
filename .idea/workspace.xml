@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales$run$tvSales$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSales.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSalesKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter03/QueryTvSalesKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/React_Operator_Deepening/생성 연산자.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/React_Operator_Deepening/생성 연산자.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExampleKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExampleKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/React_Operator_Deepening/변환 연산자.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/React_Operator_Deepening/변환 연산자.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,54 +56,28 @@
       <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter01" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.RepeatExampleKt">
-    <configuration name="DeferExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.ScanExampleKt">
+    <configuration name="ConcatExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter04.create.DeferExampleKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter04.transform.ConcatExampleKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntervalExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="GroupByExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter04.create.IntervalExampleKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IntervalRangeExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="RxJavaStudy.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter04.create.IntervalRangeExampleKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RangeExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="RxJavaStudy.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter04.create.RangeExampleKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter04.transform.GroupByExampleKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,13 +96,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ScanExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="RxJavaStudy.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="chapter04.transform.ScanExampleKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchMapExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="RxJavaStudy.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="chapter04.transform.SwitchMapExampleKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ScanExampleKt" />
+        <item itemvalue="Kotlin.GroupByExampleKt" />
+        <item itemvalue="Kotlin.SwitchMapExampleKt" />
+        <item itemvalue="Kotlin.ConcatExampleKt" />
         <item itemvalue="Kotlin.RepeatExampleKt" />
-        <item itemvalue="Kotlin.DeferExampleKt" />
-        <item itemvalue="Kotlin.IntervalRangeExampleKt" />
-        <item itemvalue="Kotlin.IntervalExampleKt" />
-        <item itemvalue="Kotlin.RangeExampleKt" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +161,8 @@
       <workItem from="1584814247680" duration="8886000" />
       <workItem from="1584942460934" duration="632000" />
       <workItem from="1584970805809" duration="100000" />
-      <workItem from="1585033293110" duration="12421000" />
+      <workItem from="1585033293110" duration="12686000" />
+      <workItem from="1585122269707" duration="9470000" />
     </task>
     <servers />
   </component>
@@ -178,46 +174,46 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584970903777" />
-    <state width="934" height="277" key="GridCell.Tab.0.bottom" timestamp="1585053795804">
+    <state width="934" height="277" key="GridCell.Tab.0.bottom" timestamp="1585134232743">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585053795804" />
-    <state width="934" height="277" key="GridCell.Tab.0.center" timestamp="1585053795804">
+    <state width="934" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585134232743" />
+    <state width="934" height="277" key="GridCell.Tab.0.center" timestamp="1585134232743">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585053795804" />
-    <state width="934" height="277" key="GridCell.Tab.0.left" timestamp="1585053795804">
+    <state width="934" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585134232743" />
+    <state width="934" height="277" key="GridCell.Tab.0.left" timestamp="1585134232742">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585053795804" />
-    <state width="934" height="277" key="GridCell.Tab.0.right" timestamp="1585053795804">
+    <state width="934" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585134232742" />
+    <state width="934" height="277" key="GridCell.Tab.0.right" timestamp="1585134232743">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585053795804" />
-    <state width="934" height="339" key="GridCell.Tab.1.bottom" timestamp="1585041065126">
+    <state width="934" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585134232743" />
+    <state width="934" height="339" key="GridCell.Tab.1.bottom" timestamp="1585054147397">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="339" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585041065126" />
-    <state width="934" height="339" key="GridCell.Tab.1.center" timestamp="1585041065126">
+    <state width="934" height="339" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585054147397" />
+    <state width="934" height="339" key="GridCell.Tab.1.center" timestamp="1585054147397">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="339" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585041065126" />
-    <state width="934" height="339" key="GridCell.Tab.1.left" timestamp="1585041065126">
+    <state width="934" height="339" key="GridCell.Tab.1.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585054147397" />
+    <state width="934" height="339" key="GridCell.Tab.1.left" timestamp="1585054147397">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="339" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585041065126" />
-    <state width="934" height="339" key="GridCell.Tab.1.right" timestamp="1585041065126">
+    <state width="934" height="339" key="GridCell.Tab.1.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585054147397" />
+    <state width="934" height="339" key="GridCell.Tab.1.right" timestamp="1585054147397">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="339" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585041065126" />
+    <state width="934" height="339" key="GridCell.Tab.1.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585054147397" />
     <state x="389" y="83" key="SettingsEditor" timestamp="1582810709404">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="389" y="83" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810709404" />
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1584970813621">
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1585122300698">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584970813621" />
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585122300698" />
     <state x="122" y="51" key="new project wizard" timestamp="1584814700100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
