@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExampleKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExampleKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/React_Operator_Deepening/변환 연산자.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/React_Operator_Deepening/변환 연산자.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/common/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/React_Operator_Deepening/결합 연산자.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/React_Operator_Deepening/결합 연산자.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/Shape.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/Shape.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
       <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter01" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ScanExampleKt">
+  <component name="RunManager" selected="Kotlin.ZipExampleKt">
     <configuration name="ConcatExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
@@ -78,19 +79,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="chapter04.transform.GroupByExampleKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RepeatExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="RxJavaStudy.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter04.create.RepeatExampleKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,13 +110,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ZipExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="RxJavaStudy.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="chapter04.combine.ZipExampleKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.ZipExampleKt" />
         <item itemvalue="Kotlin.ScanExampleKt" />
         <item itemvalue="Kotlin.GroupByExampleKt" />
         <item itemvalue="Kotlin.SwitchMapExampleKt" />
         <item itemvalue="Kotlin.ConcatExampleKt" />
-        <item itemvalue="Kotlin.RepeatExampleKt" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +164,7 @@
       <workItem from="1584970805809" duration="100000" />
       <workItem from="1585033293110" duration="12686000" />
       <workItem from="1585122269707" duration="9470000" />
+      <workItem from="1585237897695" duration="9361000" />
     </task>
     <servers />
   </component>
@@ -174,22 +176,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584970903777" />
-    <state width="934" height="277" key="GridCell.Tab.0.bottom" timestamp="1585134232743">
+    <state width="1869" height="277" key="GridCell.Tab.0.bottom" timestamp="1585247297631">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585134232743" />
-    <state width="934" height="277" key="GridCell.Tab.0.center" timestamp="1585134232743">
+    <state width="1869" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585247297631" />
+    <state width="1869" height="277" key="GridCell.Tab.0.center" timestamp="1585247297630">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585134232743" />
-    <state width="934" height="277" key="GridCell.Tab.0.left" timestamp="1585134232742">
+    <state width="1869" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585247297630" />
+    <state width="1869" height="277" key="GridCell.Tab.0.left" timestamp="1585247297630">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585134232742" />
-    <state width="934" height="277" key="GridCell.Tab.0.right" timestamp="1585134232743">
+    <state width="1869" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585247297630" />
+    <state width="1869" height="277" key="GridCell.Tab.0.right" timestamp="1585247297630">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="934" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585134232743" />
+    <state width="1869" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585247297630" />
     <state width="934" height="339" key="GridCell.Tab.1.bottom" timestamp="1585054147397">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -210,21 +212,21 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="389" y="83" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810709404" />
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1585122300698">
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1585237930789">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585122300698" />
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585237930789" />
     <state x="122" y="51" key="new project wizard" timestamp="1584814700100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="122" y="51" key="new project wizard/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584814700100" />
-    <state x="532" y="239" key="run.anything.popup" timestamp="1584873318252">
+    <state x="532" y="239" key="run.anything.popup" timestamp="1585245977105">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="532" y="239" key="run.anything.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584873318252" />
-    <state x="532" y="0" width="840" height="1032" key="search.everywhere.popup" timestamp="1584521624246">
+    <state x="532" y="239" key="run.anything.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585245977105" />
+    <state x="532" y="0" width="840" height="1032" key="search.everywhere.popup" timestamp="1585242938262">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="532" y="0" width="840" height="1032" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584521624246" />
+    <state x="532" y="0" width="840" height="1032" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585242938262" />
   </component>
 </project>
