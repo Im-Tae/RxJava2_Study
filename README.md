@@ -34,6 +34,8 @@ dependencies {
 
 ### ⅱ. [마블 다이어그램 보는 법](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/ReactiveProgramming/How_To_See_Marble_Diagrams.md)
 
+### ⅲ. [함수의 종류]()
+
 </br>
 
 ## Ⅱ
