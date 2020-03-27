@@ -11,5 +11,9 @@ class Log {
                 }
             }
         }
+
+        fun d(obj: Any) {
+            println("${Thread.currentThread().name} | debug = $obj")
+        }
     }
 }
