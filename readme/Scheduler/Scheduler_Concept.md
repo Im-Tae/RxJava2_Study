@@ -161,7 +161,7 @@ import io.reactivex.Observable
 import io.reactivex.schedulers.Schedulers
 
 class FlipExample {
-    fun marbleDiagram() {
+    fun observeOnRemoved() {
         val objs = arrayOf("1-S", "2-T", "3-P")
 
         val source = Observable.fromArray(*objs)
@@ -177,7 +177,7 @@ class FlipExample {
 
 fun main() {
     val demo = FlipExample()
-    demo.marbleDiagram()
+    demo.observeOnRemoved()
 }
 ```
 
