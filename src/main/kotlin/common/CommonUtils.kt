@@ -1,13 +1,14 @@
 package common
 
 class CommonUtils {
-    var ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    private var ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
     fun numberToAlphabet(x: Int) = ALPHABET[x % ALPHABET.length].toString()
 
     companion object {
 
         var startTime: Long? = null
+        var GITHUB_ROOT = "https://raw.githubusercontent.com/Im-Tae/RxJava2_Study/master/"
 
 
         fun start() {

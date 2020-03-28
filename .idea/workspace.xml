@@ -4,13 +4,15 @@
     <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/common/CommonUtils$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/CommonUtils$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/common/CommonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/CommonUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter05/FlipExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter05/FlipExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter05/FlipExampleKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter05/FlipExampleKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme/Scheduler/Escape_From_CallBack.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/Scheduler/Escape_From_CallBack.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/Scheduler/Scheduler_Concept.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/Scheduler/Scheduler_Concept.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/Scheduler/Type_Of_Scheduler.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/Scheduler/Type_Of_Scheduler.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter05/FlipExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter05/FlipExample.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/CallbackHell.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/CallbackHell.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/HttpGetExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/HttpGetExample.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/CommonUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/CommonUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/OkHttpHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/OkHttpHelper.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,20 +62,7 @@
       <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter01" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ExecutorSchedulerExampleKt">
-    <configuration name="ComputationSchedulerExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="RxJavaStudy.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter05.schedulers.ComputationSchedulerExampleKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Kotlin.HttpGetExampleKt">
     <configuration name="ExecutorSchedulerExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
@@ -82,6 +71,19 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="MAIN_CLASS_NAME" value="chapter05.schedulers.ExecutorSchedulerExampleKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpGetExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="RxJavaStudy.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="chapter05.examples.HttpGetExampleKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.HttpGetExampleKt" />
         <item itemvalue="Kotlin.ExecutorSchedulerExampleKt" />
         <item itemvalue="Kotlin.SingleSchedulerExampleKt" />
         <item itemvalue="Kotlin.TrampolineSchedulerExampleKt" />
         <item itemvalue="Kotlin.IOSchedulerExampleKt" />
-        <item itemvalue="Kotlin.ComputationSchedulerExampleKt" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +171,7 @@
       <workItem from="1585122269707" duration="9470000" />
       <workItem from="1585237897695" duration="10665000" />
       <workItem from="1585336670951" duration="19735000" />
-      <workItem from="1585398250151" duration="3415000" />
+      <workItem from="1585398250151" duration="5287000" />
     </task>
     <servers />
   </component>
@@ -181,22 +183,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584970903777" />
-    <state width="1869" height="277" key="GridCell.Tab.0.bottom" timestamp="1585399896324">
+    <state width="1869" height="277" key="GridCell.Tab.0.bottom" timestamp="1585405817985">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585399896324" />
-    <state width="1869" height="277" key="GridCell.Tab.0.center" timestamp="1585399896324">
+    <state width="1869" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585405817985" />
+    <state width="1869" height="277" key="GridCell.Tab.0.center" timestamp="1585405817984">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585399896324" />
-    <state width="1869" height="277" key="GridCell.Tab.0.left" timestamp="1585399896324">
+    <state width="1869" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585405817984" />
+    <state width="1869" height="277" key="GridCell.Tab.0.left" timestamp="1585405817983">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585399896324" />
-    <state width="1869" height="277" key="GridCell.Tab.0.right" timestamp="1585399896324">
+    <state width="1869" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585405817983" />
+    <state width="1869" height="277" key="GridCell.Tab.0.right" timestamp="1585405817985">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585399896324" />
+    <state width="1869" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585405817985" />
     <state width="934" height="339" key="GridCell.Tab.1.bottom" timestamp="1585054147397">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
