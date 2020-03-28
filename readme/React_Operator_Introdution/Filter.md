@@ -43,7 +43,7 @@ fun main() {
 
 
 
-filter 함수에는 boolean 값을 리턴하는 함수형 인터페이스인 Predicate를 인자로 넣는다.
+filter 함수에는 boolean 값을 리턴 하는 함수형 인터페이스인 Predicate를 인자로 넣는다.
 
 </br>
 
@@ -87,13 +87,13 @@ fun main() {
 
 
 
-**first(default) 함수** - Observable의 첫 번째 값을 필터함. 만약 값 없이 완료되면 기본값을 리턴한다.
+**first(default) 함수** - Observable의 첫 번째 값을 필터 함. 만약 값 없이 완료되면 기본 값을 리턴 한다.
 
-**last (default) 함수** - Observable의 마지막 값을 필터함. 만약 값 없이 완료되면 기본값을 리턴한다.
+**last (default) 함수** - Observable의 마지막 값을 필터 함. 만약 값 없이 완료되면 기본 값을 리턴 한다.
 
 **take (N) 함수** - 최초 N개 값만 가져온다.
 
-**takeLast (N) 함수** - 마지막 N개 값만 필터한다.
+**takeLast (N) 함수** - 마지막 N개 값만 필터 한다.
 
 **skip (N) 함수** - 최초 N개 값을 건너 뛴다.
 

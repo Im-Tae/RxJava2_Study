@@ -34,7 +34,7 @@ dependencies {
 
 ### ⅱ. [마블 다이어그램 보는 법](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/ReactiveProgramming/How_To_See_Marble_Diagrams.md)
 
-### ⅲ. [함수의 종류]()
+### ⅲ. [함수의 종류](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/ReactiveProgramming/Kinds_Of_Function.md)
 
 </br>
 
@@ -82,12 +82,12 @@ dependencies {
 
 ## Ⅴ
 
-### ⅰ. [스케줄러 개념]()
+### ⅰ. [스케줄러 개념](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Scheduler/Scheduler_Concept.md)
 
-### ⅱ. [스케줄러 종류]()
+### ⅱ. [스케줄러 종류](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Scheduler/Type_Of_Scheduler.md)
 
-### ⅲ. [콜백 지옥 벗어나기]()
+### ⅲ. [콜백 지옥 벗어나기](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Scheduler/Escape_From_CallBack.md)
 
-### ⅳ. [observeOn 함수의 활용]()
+### ⅳ. [observeOn 함수의 활용](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Scheduler/observeOn.md)
 
 </br>

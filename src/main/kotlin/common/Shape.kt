@@ -11,6 +11,7 @@ class Shape {
     val PENTAGON = "PENTAGON"
     val BALL = "BALL"
     val STAR = "STAR"
+    val FLIPPED = "(flipped)";
 
     fun getShape(obj: String): String {
         if (obj == "") return "NO-SHAPE"
@@ -42,5 +43,11 @@ class Shape {
         return if (hyphen > 0) {
             shape.substring(0, hyphen)
         } else shape
+    }
+
+    fun flip(item: String): String {
+        if (item.startsWith(FLIPPED)) return item.replace(FLIPPED, "")
+
+        return FLIPPED + item
     }
 }

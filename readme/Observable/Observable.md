@@ -6,7 +6,7 @@ RxJava1 에서는 Observable과 Single 클래스를 사용하였지만 RxJava2�
 
 
 
-Observable은 [Observer 패턴](https://ko.wikipedia.org/wiki/옵서버_패턴)을 구현한다. Observer 패턴은 객체의 상태 변화를 관찰하는 관찰자 목록을 객체에 등록하고, 상태 변화가 있을 때마다 메서드를 호출하여 객체가 직접 목록의 각 Observer에게 변화를 알려준다.
+Observable은 [Observer 패턴](https://ko.wikipedia.org/wiki/옵서버_패턴)을 구현한다. Observer 패턴은 객체의 상태 변화를 관찰하는 관찰자 목록을 객체에 등록하고, 상태 변화가 있을 때마다 메서드를 호출하여 객체가 직접 목록의 각 Observer에게 변화를 알려 준다.
 
 </br>
 
@@ -38,7 +38,7 @@ Observable을 생성할 때는 직접 인스턴스를 만들지 않고 정적 �
 
 just 함수는 데이터를 차례로 발행하려고 Observable을 생성한다. 
 
-[타입이 모두 같아야하고 한 개의 값부터 최대 열개의 값을 넣을 수 있다.]
+[타입이 모두 같아야 하고, 한 개의 값부터 최대 열 개의 값을 넣을 수 있다.]
 
 </br>
 
@@ -89,7 +89,7 @@ Observable은 just 등의 팩토리 함수로 데이터 흐름을 정의한 후 
 
 
 
-subscribe 함수는 Disposable 인터페이스의 객체를 리턴한다. </br>
+subscribe 함수는 Disposable 인터페이스의 객체를 리턴 한다. </br>
 
 
 
@@ -145,7 +145,7 @@ isDisposed() : true
 
 create 함수는 onNext,  onComplete, onError 같은 알림을 개발자가 호출해야 한다.
 
-구독자에게 데이터를 발행하려면 onNext 함수를 호출해야 하고, 모든 데이터를 발행한 후에는 반드시 onComplete 함수를 호출해야한다. </br>
+구독자에게 데이터를 발행하려면 onNext 함수를 호출해야 하고, 모든 데이터를 발행한 후에는 반드시 onComplete 함수를 호출해야 한다. </br>
 
 
 
@@ -181,7 +181,7 @@ fun main() {
 300
 ```
 
-[FirstExample 예제](https://github.com/Im-Tae/RxJava2_Study/blob/master/src/main/kotlin/chapter01/FirstExample.kt)와 다르게 Observable 타입의 source 변수를 분리하였는데, 여기서 source 변수는 차가운 Observable 이다. 즉, subscribe 함수를 호출했을때 값을 발행한다. 
+[FirstExample 예제](https://github.com/Im-Tae/RxJava2_Study/blob/master/src/main/kotlin/chapter01/FirstExample.kt)와 다르게 Observable 타입의 source 변수를 분리하였는데, 여기서 source 변수는 차가운 Observable 이다. 즉, subscribe 함수를 호출 했을 때 값을 발행한다. 
 
 </br>
 
@@ -218,7 +218,7 @@ fun main() {
 
 
 
-위에 예제를 보면 subscribe 함수를 호출하지 않아서 아무것도 출력되지 않는다.
+위에 예제를 보면 subscribe 함수를 호출하지 않아서 아무것도 출력 되지 않는다.
 
 </br>
 
@@ -298,7 +298,7 @@ Result : 200
 Result : 300
 ```
 
-위의 방법으로 할 경우에는 subscribe 함수의 원형을 알아야하고, Consumer 클래스의 메서드도 매번 입력을 해주어야 하므로 번거롭다. 따라서 람다 표현식을 사용하는 것이다.
+위의 방법으로 할 경우에는 subscribe 함수의 원형을 알아야 하고, Consumer 클래스의 메서드도 매번 입력을 해주어야 하므로 번거롭다. 따라서 람다 표현식을 사용하는 것이다.
 
 </br></br>
 
@@ -338,7 +338,7 @@ fun main() {
 300
 ```
 
-위와 같이 배열에 원하는 값을 넣고 Observable.fromArray를 호출한뒤, subscribe 함수를 호출하여 데이터가 차례로 발행된 것을 볼 수 있다.
+위와 같이 배열에 원하는 값을 넣고 Observable.fromArray를 호출한 뒤, subscribe 함수를 호출하여 데이터가 차례로 발행된 것을 볼 수 있다.
 
 </br></br>
 
@@ -463,9 +463,9 @@ ORD-2
 ORD-3
 ```
 
-BlockingQueue 객체는 구현 클래스로 ArrayBlockingQueue를 사용했고, 최대 대기 행렬 수는 100개로 지정했다.
+BlockingQueue 객체는 구현 클래스로 ArrayBlockingQueue를 사용했고, 최대 대기 행렬 수는 100 개로 지정했다.
 
-객체를 입력했지만 출력은 getId()를 사용하여 Order 객체의 ID를 출력한다.
+객체를 입력했지만 출력은 getId를 사용하여 Order 객체의 ID를 출력한다.
 
 </br></br>
 
