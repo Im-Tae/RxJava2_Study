@@ -43,7 +43,7 @@ RxJava 스케줄러의 핵심은 결국 제공되는 스케줄러의 종류를 �
 
 API Key 생성을 위해 OpenWeatherMap 홈페이지에 접속한 후 중간 위의 Sign UP을 눌러 회원 가입한다.
 
-<img src="" width = "550" height = "300"  /> </br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/OpenWeatherMap/OpenWeatherMap_HomePage.PNG?raw=true" width = "700" height = "400"  /> </br>
 
 </br>
 
@@ -51,7 +51,7 @@ API Key 생성을 위해 OpenWeatherMap 홈페이지에 접속한 후 중간 위
 
 회원 가입을 완료하면 API 메뉴를 누른 후, Cueent weather data에 있는 Subscribe를 누른다.
 
-<img src="" width = "550" height = "300"  /> </br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/OpenWeatherMap/CurrentWeatherDataAPI.PNG?raw=true" width = "300" height = "300"  /> </br>
 
 </br>
 
@@ -59,7 +59,7 @@ API Key 생성을 위해 OpenWeatherMap 홈페이지에 접속한 후 중간 위
 
 Free에 있는 Get Api key and Start를 누른 후 맨 위 중간에 있는 Sign in을 누른다.
 
-<img src="" width = "550" height = "300"  /> </br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/OpenWeatherMap/GETAPIKEYANDSTART.PNG?raw=true" width = "500" height = "300"  /> </br>
 
 </br>
 
@@ -67,7 +67,7 @@ Free에 있는 Get Api key and Start를 누른 후 맨 위 중간에 있는 Sign
 
 API Keys를 누르면 Default에 API Key 하나가 생긴 것을 볼 수 있다.
 
-<img src="" width = "550" height = "300"  /> </br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/OpenWeatherMap/APIKEY.png?raw=true" width = "700" height = "400"  /> </br>
 
 </br>
 
