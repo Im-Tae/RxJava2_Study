@@ -21,7 +21,7 @@ class RepeatExample {
 
         // 2초 간격으로 서버에 ping 보내기
         Observable.timer(2, TimeUnit.SECONDS)
-            .map { OkHttpHelper.get(serverUrl) }
+            .map { OkHttpHelper().get(serverUrl) }
             .repeat()
             .subscribe { data -> Log.it("Ping Result : $data") }
         CommonUtils.sleep(10000)
@@ -33,7 +33,7 @@ class RepeatExample {
 
         // 2초 간격으로 서버에 ping 보내기
         Observable.interval(2, TimeUnit.SECONDS)
-            .map { OkHttpHelper.get(serverUrl) }
+            .map { OkHttpHelper().get(serverUrl) }
             .take(3)
             .subscribe { data -> Log.it("Ping Result : $data") }
         CommonUtils.sleep(10000)

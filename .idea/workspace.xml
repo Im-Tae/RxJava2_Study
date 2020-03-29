@@ -4,11 +4,18 @@
     <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter05/FlipExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter05/FlipExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter05/FlipExampleKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter05/FlipExampleKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExample$heartbeatV1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExample$heartbeatV1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExample$heartbeatV2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExample$heartbeatV2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter05/examples/HttpGetExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter05/examples/HttpGetExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/common/CommonUtils$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/CommonUtils$Companion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/common/CommonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/CommonUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper$Companion.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/React_Operator_Deepening/생성 연산자.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/React_Operator_Deepening/생성 연산자.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme/Scheduler/Escape_From_CallBack.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/Scheduler/Escape_From_CallBack.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/Scheduler/observeOn.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/Scheduler/observeOn.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter04/create/RepeatExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter04/create/RepeatExample.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/CallbackHeaven.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/CallbackHeaven.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/CallbackHell.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/CallbackHell.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/HttpGetExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/HttpGetExample.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/CommonUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/CommonUtils.kt" afterDir="false" />
@@ -62,67 +69,67 @@
       <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter01" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.HttpGetExampleKt">
-    <configuration name="ExecutorSchedulerExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.OpenWeatherMapV2Kt">
+    <configuration name="CallHeavenKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter05.schedulers.ExecutorSchedulerExampleKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter05.examples.CallHeavenKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HttpGetExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="CallbackHeavenKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter05.examples.HttpGetExampleKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter05.examples.CallbackHeavenKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IOSchedulerExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="CallbackHellKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter05.schedulers.IOSchedulerExampleKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter05.examples.CallbackHellKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SingleSchedulerExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenWeatherMapV1Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter05.schedulers.SingleSchedulerExampleKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter05.examples.OpenWeatherMapV1Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TrampolineSchedulerExampleKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenWeatherMapV2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter05.schedulers.TrampolineSchedulerExampleKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter05.examples.OpenWeatherMapV2Kt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.HttpGetExampleKt" />
-        <item itemvalue="Kotlin.ExecutorSchedulerExampleKt" />
-        <item itemvalue="Kotlin.SingleSchedulerExampleKt" />
-        <item itemvalue="Kotlin.TrampolineSchedulerExampleKt" />
-        <item itemvalue="Kotlin.IOSchedulerExampleKt" />
+        <item itemvalue="Kotlin.OpenWeatherMapV2Kt" />
+        <item itemvalue="Kotlin.OpenWeatherMapV1Kt" />
+        <item itemvalue="Kotlin.CallHeavenKt" />
+        <item itemvalue="Kotlin.CallbackHeavenKt" />
+        <item itemvalue="Kotlin.CallbackHellKt" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +178,8 @@
       <workItem from="1585122269707" duration="9470000" />
       <workItem from="1585237897695" duration="10665000" />
       <workItem from="1585336670951" duration="19735000" />
-      <workItem from="1585398250151" duration="5287000" />
+      <workItem from="1585398250151" duration="7864000" />
+      <workItem from="1585412508744" duration="5658000" />
     </task>
     <servers />
   </component>
@@ -179,26 +187,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="710" y="175" key="#com.intellij.ide.util.MemberChooser" timestamp="1585406922659">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="710" y="175" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585406922659" />
     <state x="690" y="224" key="FileChooserDialogImpl" timestamp="1584970903777">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584970903777" />
-    <state width="1869" height="277" key="GridCell.Tab.0.bottom" timestamp="1585405817985">
+    <state width="1869" height="277" key="GridCell.Tab.0.bottom" timestamp="1585479899319">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585405817985" />
-    <state width="1869" height="277" key="GridCell.Tab.0.center" timestamp="1585405817984">
+    <state width="1869" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585479899319" />
+    <state width="1869" height="277" key="GridCell.Tab.0.center" timestamp="1585479899319">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585405817984" />
-    <state width="1869" height="277" key="GridCell.Tab.0.left" timestamp="1585405817983">
+    <state width="1869" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585479899319" />
+    <state width="1869" height="277" key="GridCell.Tab.0.left" timestamp="1585479899318">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585405817983" />
-    <state width="1869" height="277" key="GridCell.Tab.0.right" timestamp="1585405817985">
+    <state width="1869" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585479899318" />
+    <state width="1869" height="277" key="GridCell.Tab.0.right" timestamp="1585479899319">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585405817985" />
+    <state width="1869" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585479899319" />
     <state width="934" height="339" key="GridCell.Tab.1.bottom" timestamp="1585054147397">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -219,10 +231,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="389" y="83" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810709404" />
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1585398251180">
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1585412788250">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585398251180" />
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585412788250" />
     <state x="122" y="51" key="new project wizard" timestamp="1584814700100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -231,9 +243,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="532" y="239" key="run.anything.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585245977105" />
-    <state x="532" y="0" width="840" height="1032" key="search.everywhere.popup" timestamp="1585350017072">
+    <state x="532" y="0" width="840" height="1032" key="search.everywhere.popup" timestamp="1585408559711">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="532" y="0" width="840" height="1032" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585350017072" />
+    <state x="532" y="0" width="840" height="1032" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585408559711" />
   </component>
 </project>
