@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExample$heartbeatV1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExample$heartbeatV1$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExample$heartbeatV2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter04/create/RepeatExample$heartbeatV2$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter05/examples/HttpGetExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter05/examples/HttpGetExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/common/CommonUtils$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/CommonUtils$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/common/CommonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/CommonUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper$Companion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/common/OkHttpHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/React_Operator_Deepening/생성 연산자.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/React_Operator_Deepening/생성 연산자.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/Scheduler/Escape_From_CallBack.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/Scheduler/Escape_From_CallBack.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme/Scheduler/observeOn.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/Scheduler/observeOn.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter04/create/RepeatExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter04/create/RepeatExample.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/CallbackHeaven.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/CallbackHeaven.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/CallbackHell.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/CallbackHell.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/HttpGetExample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter05/examples/HttpGetExample.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/CommonUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/CommonUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/common/OkHttpHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/common/OkHttpHelper.kt" afterDir="false" />
-    </list>
+    <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,6 +161,7 @@
       <workItem from="1585336670951" duration="19735000" />
       <workItem from="1585398250151" duration="7864000" />
       <workItem from="1585412508744" duration="5793000" />
+      <workItem from="1585509056282" duration="25000" />
     </task>
     <servers />
   </component>
@@ -231,10 +213,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="389" y="83" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810709404" />
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1585412788250">
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1585509079111">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585412788250" />
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585509079111" />
     <state x="122" y="51" key="new project wizard" timestamp="1584814700100">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
