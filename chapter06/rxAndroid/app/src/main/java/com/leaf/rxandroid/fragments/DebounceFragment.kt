@@ -29,10 +29,10 @@ class DebounceFragment : Fragment() {
         mDisposable = getObservable()
             .debounce(1000, TimeUnit.MILLISECONDS)
             .observeOn(AndroidSchedulers.mainThread())
-            .subscribe { s ->
+            .subscribe { _ ->
                 val sdf = SimpleDateFormat("HH:mm:ss", Locale.KOREA)
                 val time = sdf.format(Calendar.getInstance().time)
-                tv_display.text = "Clicked : ${time.toString()}"
+                tv_display.text = "Clicked : $time"
             }
     }
 
