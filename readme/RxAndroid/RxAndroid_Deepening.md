@@ -307,7 +307,7 @@ Looper와 Handler 클래스를 통해 일반 스레드에서 작업한 결과를
 
 
 
-<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/UIThread.png" width = "580" height = "340"  /> </br>
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/UIThread.png?raw=true" width = "580" height = "340"  /> </br>
 
 
 
