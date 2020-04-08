@@ -690,3 +690,509 @@ AndroidSchedulers.mainThread() 은 AndroidSchedulers.from(Looper.getMainLooper()
 
 #### REST API를 활용한 네트워크 프로그래밍
 
+REST는 네트워크 아키텍처 원리의 모음으로 자원을 정의하고 자원에 대한 주소를 지정하는 방법 전반을 말한다. 웹 상의 자료를 HTTP 위에서 SOAP나 쿠키를 통한 세션 트랙킹 같은 별도의 전송 계층 없이 전송하는 아주 간단한 인터페이스이다. 간단하게 설명하면 아래와 같다.
+
+
+
+1. HTTP를 사용한 웹 서비스이다.
+2. 모든 자원은 고유 주소로 식별한다.
+3. HTTP 메서드를 사용한다.
+4. JSON, XML 등을 사용한다.
+
+
+
+이러한 사양에 따라 구현된 서비스를 RESTful 웹 서비스라고 한다.
+
+네이버, 구글 등도 RESTful API를 이용한 웹 서비스를 제공한다.
+
+</br>
+
+
+
+##### Volley 라이브러리 활용
+
+Volley는 구글에서 공개한 안드로이드 용 라이브러리이다. 다른 안드로이드 용 HTTP 클라이언트 라이브러리가 제공하는 기능을 제공하면서도 용량이 작고 빠른 실행 속도를 보여 준다. 구글은 Volley와 같은 라이브러리 사용을 권장한다. 
+
+Volley의 사용은 아래와 같다.</br>
+
+
+
+1. RequestQueue 생성
+2. Request Object 생성
+3. Request Object를 RequestQueue에 추가
+4. 설정한 Callback으로 응답 수신
+
+
+
+</br>
+
+**build.gradle**
+
+```kotlin
+implementation 'com.android.volley:volley:1.1.1'
+```
+
+</br>
+
+
+
+아래는 Volley 라이브러리를 이용하여 http://time.jsontest.com 에서 시간 정보를 얻는 예제이다.</br>
+
+
+
+**LocalVolley 클래스**
+
+```kotlin
+import android.content.Context
+import com.android.volley.RequestQueue
+import com.android.volley.toolbox.Volley
+import java.lang.IllegalStateException
+
+class LocalVolley {
+    private lateinit var sRequestQueue : RequestQueue
+    
+    fun init(context: Context) {
+        sRequestQueue = Volley.newRequestQueue(context)
+    }
+    
+    @Throws(IllegalStateException::class)
+    fun getRequestQueue(): RequestQueue = sRequestQueue
+}
+```
+
+
+
+LocalVolley 클래스는 init 메서드가 호출되면 Context를 이용하여 RequestQueue를 생성하게 된다.
+
+생성된 RequestQueue는 getRequestQueue 메서드를 이용하여 가져올 수 있다.</br>
+
+
+
+**RxAndroid 클래스**
+
+```kotlin
+import android.app.Application
+import com.leaf.rxandroid.volley.LocalVolley
+
+class RxAndroid : Application() {
+    override fun onCreate() {
+        super.onCreate()
+
+        LocalVolley().init(applicationContext)
+    }
+}
+```
+
+RxAndroid 클래스는 Application 클래스를 상속 받고 있다. 안드로이드 애플리케이션이 시작하면 해당 클래스의 onCreate 메서드가 최우선으로 호출이 되고 단 한 번만 실행된다.
+
+
+
+애플리케이션 실행을 시작하면서 LocalVolley 클래스의 init 메서드가 호출되고 Volley의 RequestQueue를 사용할 수 있게 초기화한다.
+
+싱글톤으로 초기화하여 사용할 수도 있지만 Context를 가지고 있어야 하여 애플리케이션이 생성되는 시점에 Queue를 생성하도록 한다. 싱글톤과 동일한 효과가 있다. </br>
+
+
+
+**입력**
+
+```kotlin
+private val URL = "http://time.jsontest.com/"
+
+private fun getFuture(): RequestFuture<JSONObject> {
+    val future = RequestFuture.newFuture<JSONObject>()
+    val req = JsonObjectRequest(URL, null, future, future)
+    LocalVolley().getRequestQueue().add(req)
+    return future
+}
+
+@Throws(ExecutionException::class, InterruptedException::class)
+private fun getData(): JSONObject = getFuture().get()
+```
+
+
+
+getFuture 메서드는 생성한 JsonObjectRequest 객체를 RequestQueue에 추가한다.
+
+Future은 자바에서 사용하는 비동기 계산 결과를 얻는 객체이다.</br>
+
+
+
+Obsevable에서는 다양한 비동기 함수를 제공한다.
+
+아래는 defer 함수를 사용한 예제이다.</br>
+
+
+
+**입력**
+
+```kotlin
+private fun getObservable(): Observable<JSONObject> {
+    return Observable.defer {
+        try {
+            return@defer Observable.just(getData())
+        } catch (e: InterruptedException) {
+            Log.e("log", e.message.toString())
+            return@defer Observable.error<JSONObject>(e)
+        } catch (e: ExecutionException) {
+            Log.e("log", e.cause.toString())
+            return@defer Observable.error<JSONObject>(e)
+        }
+    }
+}
+```
+
+
+
+Observable.just를 사용하여 새로운 Observable를 생성하는 이유는 내부적으로 예외 처리를 하지 못하기 때문이다. 따라서 try-catch를 이용하여 명시적으로 에러를 처리해야 한다.
+
+
+
+아래는 fromCallable을 사용한 예제이다.</br>
+
+**입력**
+
+```kotlin
+private fun getObservableFromCallable(): Observable<JSONObject> = Observable.fromCallable(this::getData)
+```
+
+
+
+defer와 다르게 어떤 데이터 타입도 사용할 수 있다. fromCallable 함수를 이용하기 위해서는 Future 객체를 직접 전달하지 않고 Future.get을 전달한다.
+
+
+
+마지막으로 fromFuture을 사용한 예제이다.
+
+</br>
+
+
+
+**입력**
+
+```kotlin
+private fun getObservableFromFuture(): Observable<JSONObject> = Observable.fromFuture(getFuture())
+```
+
+
+
+Observable 내부에서 get 메서드를 요청하고 결과를 전달 받아 Future 객체 자체를 내부에서 바로 처리한다.</br>
+
+
+
+실행 하기 전에 AndroidManifast에 다음과 같이 추가한다.
+
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+
+<application
+    android:name=".RxAndroid"
+    android:usesCleartextTraffic="true"
+    ...
+</application>
+```
+
+</br>
+
+
+
+**실행 결과**
+
+```
+{"date":"04-07-2020","milliseconds_since_epoch":1586282377603,"time":"05:59:37 PM"}
+complete
+{"date":"04-07-2020","milliseconds_since_epoch":1586282379142,"time":"05:59:39 PM"}
+complete
+{"date":"04-07-2020","milliseconds_since_epoch":1586282380154,"time":"05:59:40 PM"}
+complete
+```
+
+</br></br>
+
+
+
+#### Retrofit2 + OkHttp 활용하기
+
+Retrofit2와 OkHttp는 RxAndroid를 배포하는 Square Open Source의 안드로이드 용 네트워킹 라이브러리이다.
+
+
+
+OkHttp는 안드로이드에서 사용할 수 있는 대표 클라이언트 중 하나이며 페이스북에서 사용하고 있다. SPDY / GZIP 지원 등 네트워킹 스택을 효율적으로 관리할 수 있고, 빠른 응답 속도를 보일 수 있다는 장점이 있다.
+
+
+
+Retrofit은 서버 연동과 응답 전체를 관리하는 라이브러리이다.
+
+</br>
+
+
+
+**build.gradle**
+
+```
+dependencies {
+	// OkHttp
+    implementation("com.squareup.okhttp3:okhttp:4.5.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.5.0")
+
+    // Retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.8.1'
+    ...
+}
+```
+
+</br>
+
+
+
+Retrofit의 장점 중 하나는 애너테이션을 지원하는 것이다. 스프링처럼 애너테이션으로 APi를 설계할 수 있다.</br>
+
+
+
+**GithubServiceApi**
+
+```kotlin
+interface GithubServiceApi {
+
+    @GET("repos/{owner}/{repo}/contributors")
+    fun getCallContributors(@Path("owner") owner: String, @Path("repo") repo: String) : Call<List<Contributor>>
+
+    @GET("repos/{owner}/{repo}/contributors")
+    fun getObContributors(@Path("owner") owner: String, @Path("repo") repo: String) : Observable<List<Contributor>>
+
+    @Headers("Accept: application/vnd.github.v3.full+json")
+    @GET("repos/{owner}/{repo}/contributors")
+    fun getFutureContributors(@Path("owner") owner: String, @Path("repo") repo: String) : Future<List<Contributor>>
+}
+```
+
+
+
+getCallContributors 메서드를 호출하면 Retrofit은 URL을 생성한다.
+
+Retrofit은 RxJava를 정식으로 지원하므로 Observable을 API 리턴 값으로 사용할 수 있다.</br>
+
+
+
+아래는 정의한 API를 사용할 수 잇는 사용자화 Adapter 클래스이다.
+
+</br>
+
+
+
+**RestfulAdapter**
+
+```kotlin
+class RestfulAdapter {
+
+    companion object {
+
+        private val BASE_URL = "https://api.github.com/"
+
+        fun getSimpleApi() : GithubServiceApi {
+            val retrofit = Retrofit.Builder()
+                .baseUrl(BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .build()
+            return retrofit.create(GithubServiceApi::class.java)
+        }
+
+        fun getServiceApi() : GithubServiceApi {
+            val logInterceptor = HttpLoggingInterceptor()
+            logInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
+
+            val client = OkHttpClient.Builder()
+                .addInterceptor(logInterceptor)
+                .build()
+
+            val retrofit = Retrofit.Builder()
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .client(client)
+                .baseUrl(BASE_URL)
+                .build()
+
+            return retrofit.create(GithubServiceApi::class.java)
+        }
+    }
+}
+```
+
+
+
+Retrofit.Builder 객체를 생성하고 baseUrl 메서드와 addConverterFactory 메서드로 JSON 변환기를 설정하면 간단하게 생성할 수 있다. 마지막에 retrofit.create()를 호출할 때 해당 API 인터페이스의 클래스를 넣어주면 Builder에 설정한 정보를 바탕으로 단일 인터페이스 프락시를 생성한다.
+
+
+
+getSimpleApi와 getServiceApi의 차이점은 REST API 스택의 디버깅이 가능 한지의 여부이다.
+
+getSimpleApi는 Retrofit에 포함된 OkHttpClient 클래스를 사용하게 되고 getServiceApi는 따로 OkHttpClient.Builder 객체를 구성하여 로그를 위한 인터셉터를 설정한다. 인터셉터를 설정하게 되면 네트워크를 통해 이동하는 데이터나 에러 메시지를 실시간으로 확인할 수 있다.</br>
+
+
+
+아래는 JSON 응답에서 필요한 정보 데이터를 추출하는 Contributor 데이터 클래스이다.
+
+</br>
+
+
+
+**Contributor**
+
+```kotlin
+data class Contributor(val login : String? = null, val url : String? = null, val id : Int? = null)
+```
+
+
+
+원하는 정보만 JSON에 맞게 정의하면 GSON에서 디코딩하여 원하는 값을 Contributor 클래스의 필드에 설정한다.
+
+따라서 JSON에서 응답해야 할 login, url, id만 추출한다.
+
+</br>
+
+
+
+**입력**
+
+```kotlin
+class OkHttpFragment : Fragment() {
+
+    private val sName = "Im-Tae"
+    private val sRepo = "RxJava2_Study"
+    private val mCompositeDisposable = CompositeDisposable()
+
+	// 생략
+
+    // retrofit + okHttp
+    private fun startOkHttp() {
+        val service = RestfulAdapter.getServiceApi()
+        val call = service.getCallContributors(sName, sRepo)
+
+        call.enqueue(object : Callback<List<Contributor>> {
+            override fun onResponse(call: Call<List<Contributor>>, response: Response<List<Contributor>>) {
+                if (response.isSuccessful) {
+                    val contributors = response.body()
+
+                    for (c in contributors!!) {
+                        Log.i("log", c.toString())
+                    }
+                } else {
+                    Log.i("log", "not successful")
+                }
+            }
+
+            override fun onFailure(call: Call<List<Contributor>>, t: Throwable) {
+                Log.i("log", t.message.toString())
+            }
+        })
+    }
+
+    // retrofit + okHttp( Call의 내부 )
+    private fun startRetrofit() {
+        val service = RestfulAdapter.getSimpleApi()
+        val call = service.getCallContributors(sName, sRepo)
+
+        call.enqueue(object : Callback<List<Contributor>> {
+            override fun onResponse(call: Call<List<Contributor>>, response: Response<List<Contributor>>) {
+                if (response.isSuccessful) {
+                    val contributors = response.body()
+
+                    for (c in contributors!!) {
+                        Log.i("log", c.toString())
+                    }
+                } else {
+                    Log.i("log", "not successful")
+                }
+            }
+
+            override fun onFailure(call: Call<List<Contributor>>, t: Throwable) {
+                Log.i("log", t.message.toString())
+            }
+        })
+    }
+
+    // retrofit + okHttp + rxJava
+    private fun startRx() {
+        val service = RestfulAdapter.getServiceApi()
+        val observable = service.getObContributors(sName, sRepo)
+
+        mCompositeDisposable.add(
+            observable.subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribeWith(object : DisposableObserver<List<Contributor>>() {
+                    override fun onNext(contributors: List<Contributor>) {
+                        for (c in contributors) {
+                            Log.i("log", c.toString())
+                        }
+                    }
+
+                    override fun onError(t: Throwable) {
+                        Log.i("log", t.message.toString())
+                    }
+
+                    override fun onComplete() {
+                        Log.i("log", "complete")
+                    }
+                })
+        )
+    }
+}
+```
+
+**XML**
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/ohf_btn_retrofit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofit"/>
+
+    <Button
+        android:id="@+id/ohf_btn_get_retrofit_okhttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofit + okhttp"/>
+
+    <Button
+        android:id="@+id/ohf_btn_get_retrofit_okhttp_rx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="retrofit + okhttp + rxJava"/>
+
+</LinearLayout>
+```
+
+**출력**
+
+```
+Contributor(login=Im-Tae, url=https://api.github.com/users/Im-Tae, id=41174361)
+Contributor(login=Im-Tae, url=https://api.github.com/users/Im-Tae, id=41174361)
+Contributor(login=Im-Tae, url=https://api.github.com/users/Im-Tae, id=41174361)
+complete
+```
+
+
+
+startRx 메서드는 RestfulAdapter 클래스의 getServiceApi 메서드 안 retrofit 변수를 이용해 생성된 API 프락시를 가져온다. owner와 repo의 값을 전달하면 Observable 변수에 저장된 Observable을 리턴 한다. 생성된 Observable에 구독자를 설정하면 getServiceApi 메서드를 호출하여 github에서 정보를 얻어온다. 결과는 구독자가 수신하게 되고 GSON에서 Contributor 클래스의 구조에 맞게 디코딩하고 출력한다.
+
+
+
+startRetrofit 메서드도 동일하다. 하지만 retrofit에서 제공하는 Call 인터페이스를 사용해야 한다.
+
+Call 인터페이스의 enqueue 메서드에 콜백을 등록하면 GSON에서 디코딩한 결과를 얻을 수 있다.
+
+
+
+안드로이드에서 Retrofit의 콜백은 UI 스레드에서 실행한다. 만약 처리 시간이 오래 걸리는 작업이 필요하다면 새로운 스레드를 생성해서 실행해야 한다.
+
+</br></br>
+
