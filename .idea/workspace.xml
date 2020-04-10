@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="" />
+    <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +20,7 @@
         <option value="Class" />
         <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -163,6 +166,8 @@
       <workItem from="1585412508744" duration="5793000" />
       <workItem from="1585509056282" duration="25000" />
       <workItem from="1585804737864" duration="1000" />
+      <workItem from="1586503996276" duration="112000" />
+      <workItem from="1586521051695" duration="348000" />
     </task>
     <servers />
   </component>
@@ -174,10 +179,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="710" y="175" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585406922659" />
-    <state x="690" y="224" key="FileChooserDialogImpl" timestamp="1584970903777">
+    <state x="690" y="224" key="FileChooserDialogImpl" timestamp="1586504095231">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584970903777" />
+    <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1586504095231" />
     <state width="1869" height="277" key="GridCell.Tab.0.bottom" timestamp="1585480322278">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -214,14 +219,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="389" y="83" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810709404" />
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1585804736782">
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1586504012561">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585804736782" />
-    <state x="122" y="51" key="new project wizard" timestamp="1584814700100">
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1586504012561" />
+    <state x="122" y="51" key="new project wizard" timestamp="1586504106208">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="122" y="51" key="new project wizard/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1584814700100" />
+    <state x="122" y="51" key="new project wizard/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1586504106208" />
     <state x="532" y="239" key="run.anything.popup" timestamp="1585245977105">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

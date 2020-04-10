@@ -101,3 +101,25 @@ dependencies {
 ### ⅲ. [RxAndroid 활용](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/RxAndroid/RxAndroid_Deepening.md)
 
 ### ⅳ. [메모리 누수](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/RxAndroid/Memory_Leak.md)
+
+</br>
+
+## Ⅶ
+
+### ⅰ. [디버깅](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Debugging_And_Exception_Handling/Debugging.md)
+
+### ⅱ. [예외 처리](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Debugging_And_Exception_Handling/Exception_Handling.md)
+
+### ⅲ. [흐름 제어](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Debugging_And_Exception_Handling/Flow_Control.md)
+
+</br>
+
+## Ⅷ
+
+### ⅰ. [JUnit 5 활용](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Testing_And_Flowable/JUnit_5.md)
+
+### ⅱ. [TestObserver 클래스](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Testing_And_Flowable/TestObserver.md)
+
+### ⅲ. [비동기 코드 테스트](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Testing_And_Flowable/Asynch_Code_Test.md)
+
+### ⅳ. [Flowable 클래스](https://github.com/Im-Tae/RxJava2_Study/blob/master/readme/Testing_And_Flowable/Flowable.md)
