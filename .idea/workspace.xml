@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/Debugging_And_Exception_Handling/Debugging.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/Debugging_And_Exception_Handling/Debugging.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +20,8 @@
       <list>
         <option value="Class" />
         <option value="Kotlin Class" />
-        <option value="Kotlin File" />
         <option value="FxmlFile" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -53,8 +54,8 @@
       <recent name="C:\Users\ImTae\Documents\GitHub\RxJava2_Study\src\main\kotlin\chapter01" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.OpenWeatherMapV2Kt">
-    <configuration name="CallHeavenKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.DoOnExampleKt">
+    <configuration name="CallHeavenKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -67,7 +68,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CallbackHeavenKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="CallbackHeavenKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -80,20 +81,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CallbackHellKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="RxJavaStudy.main" />
+    <configuration name="DoOnExampleKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="RxJava2_Study.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="chapter05.examples.CallbackHellKt" />
+      <option name="MAIN_CLASS_NAME" value="chapter07.DoOnExampleKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenWeatherMapV1Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenWeatherMapV1Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -106,7 +107,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OpenWeatherMapV2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="OpenWeatherMapV2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="RxJavaStudy.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -121,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.DoOnExampleKt" />
         <item itemvalue="Kotlin.OpenWeatherMapV2Kt" />
         <item itemvalue="Kotlin.OpenWeatherMapV1Kt" />
         <item itemvalue="Kotlin.CallHeavenKt" />
         <item itemvalue="Kotlin.CallbackHeavenKt" />
-        <item itemvalue="Kotlin.CallbackHellKt" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +168,11 @@
       <workItem from="1585509056282" duration="25000" />
       <workItem from="1585804737864" duration="1000" />
       <workItem from="1586503996276" duration="112000" />
-      <workItem from="1586521051695" duration="348000" />
+      <workItem from="1586521051695" duration="941000" />
+      <workItem from="1586525608026" duration="1221000" />
+      <workItem from="1586843890330" duration="64000" />
+      <workItem from="1588180689936" duration="2397000" />
+      <workItem from="1588236355568" duration="3051000" />
     </task>
     <servers />
   </component>
@@ -175,30 +180,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="710" y="175" key="#com.intellij.ide.util.MemberChooser" timestamp="1585406922659">
+    <state x="710" y="175" key="#com.intellij.ide.util.MemberChooser" timestamp="1588236751417">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="710" y="175" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585406922659" />
-    <state x="690" y="224" key="FileChooserDialogImpl" timestamp="1586504095231">
+    <state x="710" y="175" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1588236751417" />
+    <state x="690" y="224" key="FileChooserDialogImpl" timestamp="1586843953503">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1586504095231" />
-    <state width="1869" height="277" key="GridCell.Tab.0.bottom" timestamp="1585480322278">
+    <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1586843953503" />
+    <state width="1869" height="277" key="GridCell.Tab.0.bottom" timestamp="1588239652259">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585480322278" />
-    <state width="1869" height="277" key="GridCell.Tab.0.center" timestamp="1585480322277">
+    <state width="1869" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1588239652259" />
+    <state width="1869" height="277" key="GridCell.Tab.0.center" timestamp="1588239652259">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585480322277" />
-    <state width="1869" height="277" key="GridCell.Tab.0.left" timestamp="1585480322277">
+    <state width="1869" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1588239652259" />
+    <state width="1869" height="277" key="GridCell.Tab.0.left" timestamp="1588239652259">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585480322277" />
-    <state width="1869" height="277" key="GridCell.Tab.0.right" timestamp="1585480322277">
+    <state width="1869" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1588239652259" />
+    <state width="1869" height="277" key="GridCell.Tab.0.right" timestamp="1588239652259">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1585480322277" />
+    <state width="1869" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1588239652259" />
     <state width="934" height="339" key="GridCell.Tab.1.bottom" timestamp="1585054147397">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -219,10 +224,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="389" y="83" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810709404" />
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1586504012561">
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1588236354874">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1586504012561" />
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1588236354874" />
     <state x="122" y="51" key="new project wizard" timestamp="1586504106208">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
