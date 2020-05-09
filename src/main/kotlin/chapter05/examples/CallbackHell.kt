@@ -14,7 +14,7 @@ class CallbackHell {
     private val onSuccess = object : Callback {
 
         override fun onFailure(call: Call, e: IOException) = e.printStackTrace()
-        override fun onResponse(call: Call, response: Response) = Log.it(response.body().string())
+        override fun onResponse(call: Call, response: Response) = Log.it(response.body!!.string())
     }
 
     fun run() {
@@ -26,7 +26,7 @@ class CallbackHell {
 
             override fun onFailure(call: Call, e: IOException) = e.printStackTrace()
             override fun onResponse(call: Call, response: Response) {
-                Log.it(response.body().string())
+                Log.it(response.body!!.string())
 
                 val request = Request.Builder()
                     .url(SECOND_URL)

@@ -20,7 +20,7 @@ class HttpGetExample {
 
             @Throws(IOException::class)
             override fun onResponse(call: Call, response: Response) {
-                Log.it(response.body().string())
+                Log.it(response.body!!.string())
             }
         })
     }

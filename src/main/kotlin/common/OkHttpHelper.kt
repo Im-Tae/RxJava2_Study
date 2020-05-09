@@ -15,7 +15,7 @@ class OkHttpHelper {
             .build()
 
         val response: Response = client.newCall(request).execute()
-        return response.body().string()
+        return response.body!!.string()
     }
 
     @Throws(IOException::class)
