@@ -3,6 +3,7 @@ package chapter07
 import common.Log
 import io.reactivex.Observable
 import io.reactivex.ObservableEmitter
+import io.reactivex.schedulers.Schedulers
 
 class ExceptionHandling {
     fun cannotCatch() {
@@ -65,6 +66,28 @@ class ExceptionHandling {
             Log.it("Grade is $data")
         }
     }
+
+    fun onErrorResumeNext() {
+        val salesData = arrayOf("100", "200", "A300")
+
+        val onParseError = Observable.defer {
+            Log.d("send email to administrator")
+            Observable.just(-1)
+        }.subscribeOn(Schedulers.io())
+
+        val source = Observable.fromArray(*salesData)
+            .map { data -> Integer.parseInt(data) }
+            .onErrorResumeNext(onParseError)
+
+        source.subscribe { data ->
+            if (data < 0) {
+                Log.it("Wrong Data Found")
+                return@subscribe
+            }
+
+            Log.it("Sales data : $data")
+        }
+    }
 }
 
 fun main() {
@@ -73,4 +96,5 @@ fun main() {
     demo.onErrorReturn()
     demo.onError()
     demo.onErrorReturnItem()
+    demo.onErrorResumeNext()
 }

@@ -3,8 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="6733429d-121b-47ed-a271-56f9b2bf06ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/META-INF/RxJavaStudy.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$cannotCatch$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$cannotCatch$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$cannotCatch$source$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$cannotCatch$source$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onError$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onError$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onError$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onError$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onError$source$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onError$source$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onErrorReturn$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onErrorReturn$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onErrorReturn$source$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onErrorReturn$source$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onErrorReturn$source$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onErrorReturn$source$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onErrorReturnItem$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onErrorReturnItem$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onErrorReturnItem$source$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling$onErrorReturnItem$source$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandling.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandlingKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/chapter07/ExceptionHandlingKt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme/Debugging_And_Exception_Handling/Exception_Handling.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/Debugging_And_Exception_Handling/Exception_Handling.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/chapter07/ExceptionHandling.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/chapter07/ExceptionHandling.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +191,7 @@
       <workItem from="1589019704920" duration="3475000" />
       <workItem from="1589044567317" duration="603000" />
       <workItem from="1589105843103" duration="5155000" />
+      <workItem from="1589119787770" duration="3483000" />
     </task>
     <servers />
   </component>
@@ -194,22 +207,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="224" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1586843953503" />
-    <state width="1869" height="277" key="GridCell.Tab.0.bottom" timestamp="1589119524579">
+    <state width="1869" height="277" key="GridCell.Tab.0.bottom" timestamp="1589133322261">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1589119524579" />
-    <state width="1869" height="277" key="GridCell.Tab.0.center" timestamp="1589119524579">
+    <state width="1869" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1589133322261" />
+    <state width="1869" height="277" key="GridCell.Tab.0.center" timestamp="1589133322261">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1589119524579" />
-    <state width="1869" height="277" key="GridCell.Tab.0.left" timestamp="1589119524579">
+    <state width="1869" height="277" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1589133322261" />
+    <state width="1869" height="277" key="GridCell.Tab.0.left" timestamp="1589133322261">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1589119524579" />
-    <state width="1869" height="277" key="GridCell.Tab.0.right" timestamp="1589119524579">
+    <state width="1869" height="277" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1589133322261" />
+    <state width="1869" height="277" key="GridCell.Tab.0.right" timestamp="1589133322261">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1869" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1589119524579" />
+    <state width="1869" height="277" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1589133322261" />
     <state width="934" height="339" key="GridCell.Tab.1.bottom" timestamp="1585054147397">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -230,10 +243,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="389" y="83" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1582810709404" />
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1589106323589">
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog" timestamp="1589119871185">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1589106323589" />
+    <state x="574" y="309" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1589119871185" />
     <state x="122" y="51" key="new project wizard" timestamp="1586504106208">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

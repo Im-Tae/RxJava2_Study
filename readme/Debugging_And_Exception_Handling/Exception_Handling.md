@@ -276,3 +276,86 @@ main | value = Wrong Data Found
 
 
 </br></br>
+
+
+
+#### onErrorResumeNext
+
+onErrorReturn과 onErrorReturnItem은 에러가 발생한 시점에 특정 값으로 대체하는 것이다.
+
+onErrorResumeNext은 에러가 발생했을 때 원하는 Observable로 대체하는 방법이다.
+
+에러 발생 시에 데이터를 교체하는 것뿐만 아니라 관리자에게 이메일을 보낸다던가 자원을 해제하는 등의 추가 작업을 할 떄 유용하다.</br>
+
+
+
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/onErrorResumeNext.png?raw=true" width = "550" height = "220"  /> </br>
+
+
+
+</br>
+
+에러 발생 시에 특정 값을 발행한다는 점은 같다. 하지만 특정 값을 원하는 Observable로 설정할 수 있다는 점이 다르다.
+
+
+
+아래는 onErrorResumeNext의 코드이다.</br>
+
+
+
+**입력**
+
+```kotlin
+class ExceptionHandling {
+    fun onErrorResumeNext() {
+        val salesData = arrayOf("100", "200", "A300")
+
+        val onParseError = Observable.defer {
+            Log.d("send email to administrator")
+            Observable.just(-1)
+        }.subscribeOn(Schedulers.io())
+
+        val source = Observable.fromArray(*salesData)
+            .map { data -> Integer.parseInt(data) }
+            .onErrorResumeNext(onParseError)
+
+        source.subscribe { data ->
+            if (data < 0) {
+                Log.it("Wrong Data Found")
+                return@subscribe
+            }
+
+            Log.it("Sales data : $data")
+        }
+    }
+}
+
+fun main() {
+    val demo = ExceptionHandling()
+    demo.onErrorResumeNext()
+}
+```
+
+**출력**
+
+```
+main | value = Sales data : 100
+main | value = Sales data : 200
+RxCachedThreadScheduler-1 | debug = send email to administrator
+RxCachedThreadScheduler-1 | value = Wrong Data Found
+```
+
+
+
+에러 발생시 관리자에게 이메일을 보내고 -1이라는 데이터를 발행하는 Observable로 대체한다.
+
+onParseError 변수는 subscribeOn 함수를 호출하여 IO 스케줄러에서 실행한다.
+
+
+
+onErrorResumeNext 함수는 onErrorReturn 함수처럼 Throwable을 받아오는 오버로딩도 제공한다.
+
+</br>
+
+
+
