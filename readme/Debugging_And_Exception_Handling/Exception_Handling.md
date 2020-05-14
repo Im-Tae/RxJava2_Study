@@ -359,3 +359,291 @@ onErrorResumeNext 함수는 onErrorReturn 함수처럼 Throwable을 받아오는
 
 
 
+#### retry
+
+인터넷 문제 때문에 통신이 되지 않을때 일정 시간 후에 다시 통신을 요청하는 것이 필요하다.
+
+retry를 통해 간단하게 해결할 수 있다.</br>
+
+
+
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/Retry.png?raw=true" width = "550" height = "220"  /> </br>
+
+
+
+</br>
+
+retry 함수는 onError 이벤트 발생시에 다시 subscribe하여 재구독 하도록 되어있다.
+
+ 아래는 대기시간 없는 retry를 사용한 예제이다.</br>
+
+
+
+**입력**
+
+```kotlin
+class RetryExample {
+    fun try5() {
+        CommonUtils.start()
+
+        val url = "https://api.github.com/zen"
+
+        val source = Observable.just(url)
+            .map(OkHttpHelper()::get)
+            .retry(5)
+            .onErrorReturnItem("-500")
+
+        source.subscribe { data -> Log.it("result : $data") }
+    }
+}
+
+fun main() {
+    val demo = RetryExample()
+    demo.try5()
+}
+```
+
+**출력**
+
+```
+main | 14512 | value = result : -500
+```
+
+총 5회 재시도 후 최종 요청이 실패 처리된것을 볼 수 있다.
+
+하지만 위와 같이 대기시간이 없는 요청은 도움이 되지 않는다.
+
+</br>
+
+
+
+아래는 대기시간이 있는 예제이다.</br>
+
+
+
+**입력**
+
+```kotlin
+class RetryExample {
+    fun retryWithDelay() {
+        val RETRY_MAX = 5
+        val RETRY_DELAY = 1000L
+        
+        CommonUtils.start()
+        
+        val url = "https://api.github.com/zen"
+
+        val source = Observable.just(url)
+            .map(OkHttpHelper()::get)
+            .retry{
+                retryCnt : Int, _ : Throwable ->
+                 Log.it("retryCnt = $retryCnt")
+                CommonUtils.sleep(RETRY_DELAY)
+
+                retryCnt < RETRY_MAX
+            }
+            .onErrorReturnItem("-500")
+        
+        source.subscribe { data -> Log.it("result : $data") }
+    }
+}
+
+fun main() {
+    val demo = RetryExample()
+    demo.retryWithDelay()
+}
+```
+
+**출력**
+
+```
+main | 2591 | value = retryCnt = 1
+main | 3592 | value = retryCnt = 2
+main | 4592 | value = retryCnt = 3
+main | 5593 | value = retryCnt = 4
+main | 6593 | value = retryCnt = 5
+main | 7593 | value = result : -500
+```
+
+
+
+재시도 횟수는 5번으로 설정하고 간격은 1000ms로 지정했다.
+
+retry 함수는 인자로 retryCnt와 Throwable 객체를 전달받는다.
+
+
+
+재시도 횟수를 제한하기 위해서 5회 이내일 때는 true, 이후에는 false를 리턴한다.
+
+</br></br>
+
+
+
+#### retryUntil
+
+특정 조건이 충족될 때까지만 재시도하는 함수이다.
+
+</br>
+
+
+
+**입력**
+
+```kotlin
+class RetryExample {
+    fun retryUntil() {
+
+        CommonUtils.start()
+
+        val url = "https://api.github.com/zen"
+
+        val source = Observable.just(url)
+            .map(OkHttpHelper()::get)
+            .subscribeOn(Schedulers.io())
+            .retryUntil {
+                if (CommonUtils.isNetworkAvailable())
+                    true
+                CommonUtils.sleep(1000)
+                false
+            }
+
+        source.subscribe { data -> Log.it(data) }
+
+        CommonUtils.sleep(5000)
+    }
+}
+
+fun main() {
+    val demo = RetryExample()
+    demo.retryUntil()
+}
+```
+
+**출력**
+
+```
+RxCachedThreadScheduler-1 | Network is not avaliable
+RxCachedThreadScheduler-1 | Network is not avaliable
+RxCachedThreadScheduler-1 | Network is not avaliable
+RxCachedThreadScheduler-1 | Network is not avaliable
+RxCachedThreadScheduler-1 | Network is not avaliable
+```
+
+
+
+보통 재시도 로직은 별도의 스레드에서 동작하기 때문에 IO 스케줄러를 활용한다.
+
+isNetworkAvailable 함수를 통해 네트워크가 사용 가능한 상태인지 확인하고, true를 리턴한다.
+
+네트워크를 사용할 수 없는 상태하면 1000ms 후에 재시도한다.
+
+
+
+isNetworkAvailable 함수는 아래와 같다.</br>
+
+
+
+**입력**
+
+```kotlin
+class CommonUtils {
+    
+    companion object {
+        
+        fun isNetworkAvailable(): Boolean {
+            try {
+                return InetAddress.getByName("www.google.com").isReachable(1000)
+            } catch (e: IOException) {
+                e.printStackTrace()
+            }
+            return false
+        }
+    }
+}
+```
+
+isNetworkAvailable 함수는 구글에 접속할 수 있는지 확인하여 간접적으로 네트워크를 사용할 수 있는지 확인하도록 되어있다.
+
+</br>
+
+
+
+#### retryWhen
+
+재시도 함수중에 가장 복잡한 함수이다.
+
+</br>
+
+
+
+<img src="https://github.com/Im-Tae/RxJava2_Study/blob/master/image/retryWhen.png?raw=true" width = "550" height = "250"  /> </br>
+
+
+
+
+
+재시도를 하며, 재시도 횟수가 늘어날 때마다 재시도 시간이 늘어난다.
+
+</br>
+
+
+
+**입력**
+
+```kotlin
+class RetryExample {
+    fun retryWhen() {
+
+        Observable.create { emitter: ObservableEmitter<String?> ->
+            println("subscribing")
+            emitter.onError(RuntimeException("always fails"))
+        }
+            .retryWhen { attempts: Observable<Throwable?> ->
+                attempts.zipWith(
+                    Observable.range(1, 3),
+                    BiFunction { n: Throwable?, i: Int -> i }
+                ).flatMap { i: Int ->
+                    println("delay retry by $i second(s)")
+                    Observable.timer(i.toLong(), TimeUnit.SECONDS)
+                }
+            }.blockingForEach { x: String? -> println(x) }
+
+        Observable.create{ emitter: ObservableEmitter<String> ->
+            emitter.onError(RuntimeException("always fails"))
+        }.retryWhen { attemps : Observable<Throwable> ->
+            attemps.zipWith(
+                Observable.range(1, 3),
+                BiFunction { _: Throwable, i: Int -> i }
+            ).flatMap { i ->
+                Log.it("delay retry by $i second(s)")
+                Observable.timer(i.toLong(), TimeUnit.SECONDS)
+            }
+        }.blockingForEach { data -> Log.it(data) }
+    }
+}
+
+fun main() {
+    val demo = RetryExample()
+    demo.retryWhen()
+}
+```
+
+**출력**
+
+```
+subscribing
+delay retry by 1 second(s)
+subscribing
+delay retry by 2 second(s)
+subscribing
+delay retry by 3 second(s)
+subscribing
+```
+
+
+
+Observable은 데이터 발행을 항상 실패하도록 성정하였다.
+
+attemps는 Observable이다. 재시도를 할 때 Observable.range와 zip 함수로 두 Observalbe을 합성한다. 즉, 3번 재시도 한다는 뜻이다. 또한 재시도 할 때마다 timer 함수를 호출하여 1000ms씩 대기 시간을 늘린다.
+
+</br>

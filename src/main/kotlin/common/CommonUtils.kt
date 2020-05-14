@@ -1,5 +1,8 @@
 package common
 
+import java.io.IOException
+import java.net.InetAddress
+
 class CommonUtils {
     private var ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -21,6 +24,15 @@ class CommonUtils {
             } catch (e: InterruptedException) {
                 e.printStackTrace()
             }
+        }
+
+        fun isNetworkAvailable(): Boolean {
+            try {
+                return InetAddress.getByName("www.google.com").isReachable(1000)
+            } catch (e: IOException) {
+                e.printStackTrace()
+            }
+            return false
         }
     }
 }
