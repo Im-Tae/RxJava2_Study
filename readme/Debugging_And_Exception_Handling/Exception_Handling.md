@@ -80,7 +80,7 @@ static final class OnErrorMissingConsumer implements Consumer<Throwable> {
 
 
 
-전체적으로 보면 OnErrorNotImplementedException 예외를 던지라고 알려준다.</br>
+전체적으로 보면 OnErrorNotImplementedException 예외를 던지라고 알려 준다.</br>
 
 
 
@@ -126,7 +126,7 @@ Observable을 생성하여 onError를 호출하면 rxjava에서 onError을 처�
 
 #### onErrorReturn
 
-rxjava에서는 에러도 데이터로 보는 것이 적절하다. 따라서 예외 처리하는 방식중에 하나는 예외가 발생했을 때 에러를 의미하는 다른 데이터로 대체하는 것이다.
+rxjava에서는 에러도 데이터로 보는 것이 적절하다. 따라서 예외 처리하는 방식 중에 하나는 예외가 발생했을 때 에러를 의미하는 다른 데이터로 대체하는 것이다.
 
 onError 이벤트는 데이터 흐름이 바로 중단되므로 subcribe 함수를 호출할 때 onError 이벤트를 처리하는 것은 Out Of Memory 같은 중대한 에러가 발생했을 때만 활용한다.
 
@@ -142,7 +142,7 @@ onErrorReturn 함수는 에러가 발생했을 때 내가 원하는 데이터로
 
 
 
-에러가 발생하는 경우 onErrorReturn 함수는 인자로 넘겼던 기본값을 대신 발행하고 onComplete 이벤트가 발생한다. 
+에러가 발생하는 경우 onErrorReturn 함수는 인자로 넘겼던 기본 값을 대신 발행하고 onComplete 이벤트가 발생한다. 
 
 
 
@@ -188,7 +188,7 @@ main | value = Wrong Data Found
 
 
 
-Integer.parseInt에서 발생하는 NumberFormatException을 onErrorReturn을 통해 예외처리를 한 것이다. onErrorReturn에서 예외 발생시에 음수 값을 리턴하도록 했고, data가 0보다 작으면 에러 로그를 출력하도록 했다.
+Integer.parseInt에서 발생하는 NumberFormatException을 onErrorReturn을 통해 예외 처리를 한 것이다. onErrorReturn에서 예외 발생 시에 음수 값을 리턴 하도록 했고, data가 0보다 작으면 에러 로그를 출력하도록 했다.
 
 
 
@@ -285,7 +285,7 @@ onErrorReturn과 onErrorReturnItem은 에러가 발생한 시점에 특정 값�
 
 onErrorResumeNext은 에러가 발생했을 때 원하는 Observable로 대체하는 방법이다.
 
-에러 발생 시에 데이터를 교체하는 것뿐만 아니라 관리자에게 이메일을 보낸다던가 자원을 해제하는 등의 추가 작업을 할 떄 유용하다.</br>
+에러 발생 시에 데이터를 교체하는 것 뿐만 아니라 관리자에게 이메일을 보내거나, 자원을 해제하는 등의 추가 작업을 할 때 유용하다.</br>
 
 
 
@@ -347,7 +347,7 @@ RxCachedThreadScheduler-1 | value = Wrong Data Found
 
 
 
-에러 발생시 관리자에게 이메일을 보내고 -1이라는 데이터를 발행하는 Observable로 대체한다.
+에러 발생 시 관리자에게 이메일을 보내고 -1이라는 데이터를 발행하는 Observable로 대체한다.
 
 onParseError 변수는 subscribeOn 함수를 호출하여 IO 스케줄러에서 실행한다.
 
@@ -361,7 +361,7 @@ onErrorResumeNext 함수는 onErrorReturn 함수처럼 Throwable을 받아오는
 
 #### retry
 
-인터넷 문제 때문에 통신이 되지 않을때 일정 시간 후에 다시 통신을 요청하는 것이 필요하다.
+인터넷 문제 때문에 통신이 되지 않을 때 일정 시간 후에 다시 통신을 요청하는 것이 필요하다.
 
 retry를 통해 간단하게 해결할 수 있다.</br>
 
@@ -373,9 +373,9 @@ retry를 통해 간단하게 해결할 수 있다.</br>
 
 </br>
 
-retry 함수는 onError 이벤트 발생시에 다시 subscribe하여 재구독 하도록 되어있다.
+retry 함수는 onError 이벤트 발생 시에 다시 subscribe하여 재 구독 하도록 되어있다.
 
- 아래는 대기시간 없는 retry를 사용한 예제이다.</br>
+ 아래는 대기 시간 없는 retry를 사용한 예제이다.</br>
 
 
 
@@ -409,15 +409,15 @@ fun main() {
 main | 14512 | value = result : -500
 ```
 
-총 5회 재시도 후 최종 요청이 실패 처리된것을 볼 수 있다.
+총 5 회 재 시도 후 최종 요청이 실패 처리된 것을 볼 수 있다.
 
-하지만 위와 같이 대기시간이 없는 요청은 도움이 되지 않는다.
+하지만 위와 같이 대기 시간이 없는 요청은 도움이 되지 않는다.
 
 </br>
 
 
 
-아래는 대기시간이 있는 예제이다.</br>
+아래는 대기 시간이 있는 예제이다.</br>
 
 
 
@@ -467,13 +467,13 @@ main | 7593 | value = result : -500
 
 
 
-재시도 횟수는 5번으로 설정하고 간격은 1000ms로 지정했다.
+재 시도 횟수는 5 번으로 설정하고 간격은 1000ms로 지정했다.
 
-retry 함수는 인자로 retryCnt와 Throwable 객체를 전달받는다.
+retry 함수는 인자로 retryCnt와 Throwable 객체를 전달 받는다.
 
 
 
-재시도 횟수를 제한하기 위해서 5회 이내일 때는 true, 이후에는 false를 리턴한다.
+재 시도 횟수를 제한하기 위해서 5 회 이내일 때는 true, 이후에는 false를 리턴 한다.
 
 </br></br>
 
@@ -481,7 +481,7 @@ retry 함수는 인자로 retryCnt와 Throwable 객체를 전달받는다.
 
 #### retryUntil
 
-특정 조건이 충족될 때까지만 재시도하는 함수이다.
+특정 조건이 충족될 때까지만 재 시도하는 함수이다.
 
 </br>
 
@@ -531,11 +531,11 @@ RxCachedThreadScheduler-1 | Network is not avaliable
 
 
 
-보통 재시도 로직은 별도의 스레드에서 동작하기 때문에 IO 스케줄러를 활용한다.
+보통 재 시도 로직은 별도의 스레드에서 동작하기 때문에 IO 스케줄러를 활용한다.
 
 isNetworkAvailable 함수를 통해 네트워크가 사용 가능한 상태인지 확인하고, true를 리턴한다.
 
-네트워크를 사용할 수 없는 상태하면 1000ms 후에 재시도한다.
+네트워크를 사용할 수 없는 상태이면 1000ms 후에 재 시도한다.
 
 
 
@@ -570,7 +570,7 @@ isNetworkAvailable 함수는 구글에 접속할 수 있는지 확인하여 간�
 
 #### retryWhen
 
-재시도 함수중에 가장 복잡한 함수이다.
+재 시도 함수 중에 가장 복잡한 함수이다.
 
 </br>
 
@@ -582,7 +582,7 @@ isNetworkAvailable 함수는 구글에 접속할 수 있는지 확인하여 간�
 
 
 
-재시도를 하며, 재시도 횟수가 늘어날 때마다 재시도 시간이 늘어난다.
+재 시도를 하며, 재 시도 횟수가 늘어날 때마다 재 시도 시간이 늘어난다.
 
 </br>
 
@@ -642,8 +642,8 @@ subscribing
 
 
 
-Observable은 데이터 발행을 항상 실패하도록 성정하였다.
+Observable은 데이터 발행을 항상 실패하도록 설정하였다.
 
-attemps는 Observable이다. 재시도를 할 때 Observable.range와 zip 함수로 두 Observalbe을 합성한다. 즉, 3번 재시도 한다는 뜻이다. 또한 재시도 할 때마다 timer 함수를 호출하여 1000ms씩 대기 시간을 늘린다.
+attemps는 Observable이다. 재 시도를 할 때 Observable.range와 zip 함수로 두 Observalbe을 합성한다. 즉, 3 번 재 시도 한다는 뜻이다. 또한 재 시도 할 때마다 timer 함수를 호출하여 1000ms씩 대기 시간을 늘린다.
 
 </br>
